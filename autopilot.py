@@ -29,6 +29,14 @@ import features as F
 
 H, DAY = 3600.0, 86400.0
 
+# Posting time: the pipeline moves ONE of its daily slots into the window on a share of DAYS
+# (radar_directives.day_slots). Judged by when our videos were actually published. Competitor
+# publish hours are confounded by where each channel is based - the A/B on our own channel is
+# what settles it.
+POST_TIME = {f"posted_{a:02d}-{a + 6:02d}utc": {"lever": "post_time", "params": {"window": [a, a + 6]},
+                                                "eval_on": "published"}
+             for a in (0, 6, 12, 18)}
+
 # radar feature -> pipeline lever. Only these can ever be switched on automatically.
 LEVERS = {
     "chess": {
@@ -37,6 +45,7 @@ LEVERS = {
         "hashtags_in_title": {"lever": "title_hashtags", "eval_on": "title"},
         "caps_word":         {"lever": "title_caps", "eval_on": "title"},
         "brilliant/blunder": {"lever": "title_power_word", "eval_on": "title"},
+        **POST_TIME,
     },
     "reddit": {
         "emoji":             {"lever": "title_emoji", "eval_on": "title"},
@@ -47,6 +56,7 @@ LEVERS = {
         "short_title(<=6w)": {"lever": "title_style", "params": {"style": "short"}, "eval_on": "title"},
         "long_title(>=12w)": {"lever": "title_style", "params": {"style": "long"}, "eval_on": "title"},
         "dur21-45s":         {"lever": "length_target", "params": {"seconds": 44}, "eval_on": "duration"},
+        **POST_TIME,
         # story picker: every theme the radar measures
         **{theme: {"lever": "story_theme", "eval_on": "title+desc"} for theme in F.REDDIT_THEMES},
     },
@@ -95,7 +105,9 @@ def _own_outcomes(niche, state, archive, since, now):
 
 
 def _treated(video, feature, niche, eval_on):
-    if eval_on == "duration":
+    if eval_on == "published":
+        f = F.title_features("", niche, None, video["published"])
+    elif eval_on == "duration":
         f = F.title_features("", niche, video["duration"])
     else:
         text = video["title"] + (" " + video["desc"] if eval_on == "title+desc" else "")

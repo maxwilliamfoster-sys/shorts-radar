@@ -164,7 +164,7 @@ def analyse_niche(niche, rs, state, now):
     if own_recent and lifts:
         own_feats = [F.title_features(r["title"], niche, r["duration"], r["published"]) for r in own_recent]
         for l in lifts:
-            if l["lift"] < 1.2 or l["feature"].startswith("posted_"):
+            if l["lift"] < 1.2:
                 continue
             own_share = sum(1 for f in own_feats if f.get(l["feature"])) / len(own_feats)
             if own_share < l["share_top"] / 2:
