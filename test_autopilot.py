@@ -59,6 +59,19 @@ try:
     st = own_videos([0] * 6, [3] * 6, since + H)
     ch, ap = autopilot.run(res(), st, [], dirs[2], since + 10 * 24 * H)
     assert ap["active"]["chess"] and not ch, ch
+    # one sweep under the bar is tolerated; 6h+ under the bar restarts the 20h clock
+    d4, d5 = tempfile.mkdtemp(), tempfile.mkdtemp()
+    dirs += [d4, d5]
+    autopilot.run(res(), empty(), [], d4, T0)
+    autopilot.run(res(lift=1.1), empty(), [], d4, T0 + 5 * H)
+    autopilot.run(res(), empty(), [], d4, T0 + 6 * H)
+    _, ap = autopilot.run(res(), empty(), [], d4, T0 + 21 * H)
+    assert ap["active"]["chess"], "brief dip should not reset"
+    autopilot.run(res(), empty(), [], d5, T0)
+    autopilot.run(res(lift=1.1), empty(), [], d5, T0 + 1 * H)
+    autopilot.run(res(lift=1.1), empty(), [], d5, T0 + 8 * H)
+    _, ap = autopilot.run(res(), empty(), [], d5, T0 + 21 * H)
+    assert not ap["active"]["chess"], "long absence must reset the clock"
     print("ALL OK")
 finally:
     for x in dirs:

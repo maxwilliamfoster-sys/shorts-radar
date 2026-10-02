@@ -1,7 +1,8 @@
 name: Radar sweep
 
-# Every 2h: snapshot every watched channel's Shorts (RSS), discover channels every 6h,
-# and once a day (first sweep after 07:00 UTC) send the Telegram report.
+# Runs continuously. Each run sweeps every 30 min for ~5.5h (loop.sh), then starts the next
+# run of this workflow itself. The cron is only a backstop that restarts the chain if it ever
+# breaks; while a run is live, the concurrency group just queues it.
 # Data lives on the `data` branch as ONE force-pushed commit, so history never grows.
 on:
   schedule:
@@ -9,11 +10,11 @@ on:
   workflow_dispatch:
     inputs:
       report:
-        description: "Send a report now"
+        description: "Send the full report on the first sweep"
         type: boolean
         default: false
       discover:
-        description: "Run channel discovery now"
+        description: "Run channel discovery on the first sweep"
         type: boolean
         default: false
       start_now:
@@ -23,6 +24,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: radar
@@ -31,7 +33,7 @@ concurrency:
 jobs:
   sweep:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -40,45 +42,29 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
 
-      - name: Fetch data branch
-        run: |
-          git clone -q --depth 1 --branch data "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data || mkdir -p data
-          rm -rf data/.git
-
       - name: YouTube token (optional - without it the radar runs RSS-only)
         env:
           YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
         run: if [ -n "$YOUTUBE_TOKEN" ]; then printf '%s' "$YOUTUBE_TOKEN" > token.json; fi
 
-      - name: Collect
+      - name: Sweep loop
         env:
-          DISCOVER: ${{ inputs.discover }}
-        run: python collect.py --data data $( [ "$DISCOVER" = "true" ] && echo --discover )
-
-      - name: Report
-        continue-on-error: true
-        env:
+          GH_TOKEN: ${{ github.token }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           FORCE: ${{ inputs.report }}
+          DISCOVER: ${{ inputs.discover }}
           START_NOW: ${{ inputs.start_now }}
-        run: |
-          if [ "$START_NOW" = "true" ]; then python analyze.py --data data --send --start-now
-          elif [ "$FORCE" = "true" ]; then python analyze.py --data data --send
-          else python analyze.py --data data --send --if-due; fi
+        run: bash loop.sh
 
-      - name: Save data branch
-        if: always()
+      - name: Start the next run
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          [ -f data/state.json ] || exit 0
-          cd data
-          git init -q -b data
-          git config user.name "shorts-radar"
-          git config user.email "actions@users.noreply.github.com"
-          git add -A
-          git commit -qm "radar data $(date -u +%FT%TZ)"
-          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data
+          if [ -f .chain_ok ]; then gh workflow run radar.yml --ref main -R "${{ github.repository }}"
+          else echo "run was too short or failing - leaving the restart to the cron backstop"; fi
 
       - name: Alert on failure
         if: failure()
@@ -88,4 +74,4 @@ jobs:
         run: |
           curl -s -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
-            --data-urlencode "text=⚠️ Shorts Radar sweep failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            --data-urlencode "text=⚠️ Shorts Radar run failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

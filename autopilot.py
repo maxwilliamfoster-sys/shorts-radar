@@ -59,7 +59,8 @@ MIN_LIFT = 1.3
 START_NOW_MIN_LIFT = 1.25  # one-off kick-off (analyze.py --start-now): no confirmation wait, slightly lower bar
 MIN_N = 12
 MIN_SHARE_TOP = 0.12
-CONFIRM_HOURS = 20       # a feature must qualify in two reports at least this far apart
+CONFIRM_HOURS = 20       # a feature must keep qualifying this long before it is tested
+CANDIDATE_GRACE_HOURS = 6
 MAX_ACTIVE = 2
 START_SHARE, MAX_SHARE = 0.5, 0.75
 MIN_ARM = 6              # matured own videos needed in each arm before judging
@@ -162,13 +163,20 @@ def run(results, state, archive, data_dir, now=None, start_now=False):
             qualifying = [l for l in res["feature_lift"]
                           if l["feature"] in LEVERS[niche] and l["lift"] >= min_lift and l["n"] >= MIN_N
                           and l["share_top"] >= MIN_SHARE_TOP and l["feature"] in gaps]
-            q_names = {l["feature"] for l in qualifying}
+            # A trait must keep qualifying for CONFIRM_HOURS. The radar re-checks every ~30 min, so a
+            # single sweep dipping under the bar is tolerated; out for CANDIDATE_GRACE_HOURS resets it.
+            for k, v in list(cands.items()):
+                if not isinstance(v, dict):                    # old format: first-seen timestamp
+                    v = cands[k] = {"first": v, "last": v}
+            for l in qualifying:
+                c = cands.setdefault(l["feature"], {"first": now, "last": now})
+                c["last"] = now
             for k in list(cands):
-                if k not in q_names:
-                    del cands[k]          # must qualify in CONSECUTIVE reports
+                if now - cands[k]["last"] > CANDIDATE_GRACE_HOURS * H:
+                    del cands[k]
             for l in qualifying:
                 k = l["feature"]
-                first = cands.setdefault(k, now)
+                first = cands[k]["first"]
                 busy = {d["feature"] for d in active}
                 levers_busy = {d["lever"] for d in active}     # one experiment per lever at a time
                 lev = LEVERS[niche][k]

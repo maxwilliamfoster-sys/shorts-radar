@@ -352,21 +352,31 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default="data")
     ap.add_argument("--send", action="store_true")
-    ap.add_argument("--if-due", action="store_true")
+    ap.add_argument("--if-due", action="store_true",
+                    help="every-sweep mode: analysis + autopilot always run; the full digest is sent only "
+                         "once a day (first sweep after 07:00 UTC), autopilot changes are sent immediately")
     ap.add_argument("--start-now", action="store_true", help="autopilot: start qualifying experiments without the 20h confirmation")
     ap.add_argument("--no-llm", action="store_true")
     a = ap.parse_args()
     now = time.time()
     state, archive = load(a.data)
-    if a.if_due:
-        hour = datetime.now(timezone.utc).hour
-        if now - state["meta"].get("last_report", 0) < 20 * H or hour < 7:
-            print("[report] not due"); return
+    hour = datetime.now(timezone.utc).hour
+    digest_due = not a.if_due or (now - state["meta"].get("last_report", 0) >= 20 * H and hour >= 7)
     rs = rows(state, archive, now)
     results = []
+    prev = {}
+    for niche in config.NICHES:
+        p = os.path.join(a.data, "insights", f"{niche}.json")
+        if os.path.exists(p):
+            with open(p, encoding="utf-8") as f:
+                prev[niche] = json.load(f).get("hypotheses", [])
     for niche in config.NICHES:
         res = analyse_niche(niche, rs, state, now)
-        res["hypotheses"] = [] if a.no_llm or res["n_scored"] < 40 else llm_hypotheses(res)
+        # the LLM runs once a day with the digest; sweeps in between keep the last hypotheses
+        if digest_due and not a.no_llm and res["n_scored"] >= 40:
+            res["hypotheses"] = llm_hypotheses(res)
+        else:
+            res["hypotheses"] = prev.get(niche, [])
         results.append(res)
     import autopilot
     changes, ap = autopilot.run(results, state, archive, a.data, now, a.start_now)
@@ -380,13 +390,21 @@ def main():
     for res in results:
         with open(os.path.join(a.data, "insights", f"{res['niche']}.json"), "w", encoding="utf-8") as f:
             json.dump({"generated": round(now), **res}, f, ensure_ascii=False, indent=1)
-    digest = telegram_digest(results, now)
-    if changes:
-        digest += "\n\n🤖 <b>Autopilot</b>\n" + "\n".join(changes)
-    print(digest)
-    if a.send:
-        send_telegram(digest)
-    state["meta"]["last_report"] = now
+    if digest_due:
+        msg = telegram_digest(results, now)
+        if changes:
+            msg += "\n\n🤖 <b>Autopilot</b>\n" + "\n".join(changes)
+        state["meta"]["last_report"] = now
+    elif changes:
+        msg = "🤖 <b>Shorts Radar autopilot</b>\n" + "\n".join(changes)
+    else:
+        msg = None
+        print("[report] digest not due, no autopilot changes")
+    if msg:
+        print(msg)
+        if a.send:
+            send_telegram(msg)
+    state["meta"]["last_analyze"] = now
     with open(os.path.join(a.data, "state.json"), "w", encoding="utf-8") as f:
         json.dump(state, f, ensure_ascii=False, separators=(",", ":"))
 

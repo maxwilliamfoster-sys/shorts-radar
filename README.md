@@ -1,7 +1,7 @@
 # Shorts Radar
 
 Watches the YouTube Shorts market around two automated channels, **Candidate Moves** (chess puzzles) and **Reddit stories**.
-It runs every 2 hours on GitHub Actions and sends a daily report to Telegram.
+It runs continuously on GitHub Actions (a sweep every 30 minutes, self-restarting; see `loop.sh`), re-judges experiments every sweep, and sends a daily report to Telegram.
 
 ## What it does
 
