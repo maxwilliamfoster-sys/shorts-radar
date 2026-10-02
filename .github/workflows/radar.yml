@@ -12,6 +12,10 @@ on:
         description: "Send a report now"
         type: boolean
         default: false
+      discover:
+        description: "Run channel discovery now"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -43,7 +47,9 @@ jobs:
         run: if [ -n "$YOUTUBE_TOKEN" ]; then printf '%s' "$YOUTUBE_TOKEN" > token.json; fi
 
       - name: Collect
-        run: python collect.py --data data
+        env:
+          DISCOVER: ${{ inputs.discover }}
+        run: python collect.py --data data $( [ "$DISCOVER" = "true" ] && echo --discover )
 
       - name: Report
         continue-on-error: true

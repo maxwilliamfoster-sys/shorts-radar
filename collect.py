@@ -42,8 +42,8 @@ def ensure_own(state):
         c["own"] = niche
 
 
-def run_discovery(state, api, now):
-    if now - state["meta"].get("last_discovery", 0) < config.DISCOVERY_EVERY_HOURS * H:
+def run_discovery(state, api, now, force=False):
+    if not force and now - state["meta"].get("last_discovery", 0) < config.DISCOVERY_EVERY_HOURS * H:
         return
     if not api.ok:
         print("[discover] skipped: mapping videos to channels needs the Data API")
@@ -187,12 +187,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default="data")
     ap.add_argument("--token", default="token.json")
+    ap.add_argument("--discover", action="store_true", help="run discovery now")
     a = ap.parse_args()
     now = time.time()
     state = load(a.data)
     ensure_own(state)
     api = sources.DataAPI(state, a.token)
-    run_discovery(state, api, now)
+    run_discovery(state, api, now, a.discover)
     actives = active_channels(state)
     ok, fail = snapshot(state, actives, now)
     enrich(state, api, now)
