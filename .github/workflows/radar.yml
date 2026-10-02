@@ -16,6 +16,10 @@ on:
         description: "Run channel discovery now"
         type: boolean
         default: false
+      start_now:
+        description: "Autopilot: start qualifying experiments now (implies a report)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -58,8 +62,10 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           FORCE: ${{ inputs.report }}
+          START_NOW: ${{ inputs.start_now }}
         run: |
-          if [ "$FORCE" = "true" ]; then python analyze.py --data data --send
+          if [ "$START_NOW" = "true" ]; then python analyze.py --data data --send --start-now
+          elif [ "$FORCE" = "true" ]; then python analyze.py --data data --send
           else python analyze.py --data data --send --if-due; fi
 
       - name: Save data branch

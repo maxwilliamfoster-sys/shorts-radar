@@ -164,7 +164,7 @@ def analyse_niche(niche, rs, state, now):
     if own_recent and lifts:
         own_feats = [F.title_features(r["title"], niche, r["duration"], r["published"]) for r in own_recent]
         for l in lifts:
-            if l["lift"] < 1.3 or l["feature"].startswith("posted_"):
+            if l["lift"] < 1.2 or l["feature"].startswith("posted_"):
                 continue
             own_share = sum(1 for f in own_feats if f.get(l["feature"])) / len(own_feats)
             if own_share < l["share_top"] / 2:
@@ -353,6 +353,7 @@ def main():
     ap.add_argument("--data", default="data")
     ap.add_argument("--send", action="store_true")
     ap.add_argument("--if-due", action="store_true")
+    ap.add_argument("--start-now", action="store_true", help="autopilot: start qualifying experiments without the 20h confirmation")
     ap.add_argument("--no-llm", action="store_true")
     a = ap.parse_args()
     now = time.time()
@@ -368,7 +369,7 @@ def main():
         res["hypotheses"] = [] if a.no_llm or res["n_scored"] < 40 else llm_hypotheses(res)
         results.append(res)
     import autopilot
-    changes, ap = autopilot.run(results, state, archive, a.data, now)
+    changes, ap = autopilot.run(results, state, archive, a.data, now, a.start_now)
     md = markdown(results, state, now) + "\n" + autopilot_md(ap, changes)
     day = datetime.fromtimestamp(now, timezone.utc).strftime("%Y-%m-%d")
     for d in ("reports", "insights"):

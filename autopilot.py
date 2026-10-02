@@ -56,6 +56,7 @@ THEME_PATTERNS = {
 
 MIN_SCORED = 60          # niche needs this many scored videos before anything is switched on
 MIN_LIFT = 1.3
+START_NOW_MIN_LIFT = 1.25  # one-off kick-off (analyze.py --start-now): no confirmation wait, slightly lower bar
 MIN_N = 12
 MIN_SHARE_TOP = 0.12
 CONFIRM_HOURS = 20       # a feature must qualify in two reports at least this far apart
@@ -125,7 +126,7 @@ def evaluate(d, niche, state, archive, now):
     return "keep", detail
 
 
-def run(results, state, archive, data_dir, now=None):
+def run(results, state, archive, data_dir, now=None, start_now=False):
     """Update experiments from today's analysis. Returns human-readable change lines."""
     now = now or time.time()
     path = os.path.join(data_dir, "autopilot.json")
@@ -157,8 +158,9 @@ def run(results, state, archive, data_dir, now=None):
         # 2. start new ones from features that keep qualifying
         if res["n_scored"] >= MIN_SCORED:
             gaps = {g["feature"]: g for g in res["gaps"]}
+            min_lift = START_NOW_MIN_LIFT if start_now else MIN_LIFT
             qualifying = [l for l in res["feature_lift"]
-                          if l["feature"] in LEVERS[niche] and l["lift"] >= MIN_LIFT and l["n"] >= MIN_N
+                          if l["feature"] in LEVERS[niche] and l["lift"] >= min_lift and l["n"] >= MIN_N
                           and l["share_top"] >= MIN_SHARE_TOP and l["feature"] in gaps]
             q_names = {l["feature"] for l in qualifying}
             for k in list(cands):
@@ -171,7 +173,7 @@ def run(results, state, archive, data_dir, now=None):
                 levers_busy = {d["lever"] for d in active}     # one experiment per lever at a time
                 lev = LEVERS[niche][k]
                 cooling = retired.get(k, {}).get("until", 0) > now
-                if (now - first >= CONFIRM_HOURS * H and k not in busy and not cooling
+                if ((start_now or now - first >= CONFIRM_HOURS * H) and k not in busy and not cooling
                         and lev["lever"] not in levers_busy and len(active) < MAX_ACTIVE):
                     params = dict(lev.get("params", {}))
                     if lev["lever"] == "story_theme":
