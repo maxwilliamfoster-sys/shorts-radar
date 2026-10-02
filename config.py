@@ -41,6 +41,10 @@ QUOTA_CAP_PER_DAY = 400        # Data API units the radar may spend (Pacific-day
 SUBS_REFRESH_HOURS = 24
 MIN_RELEVANCE = 0.3
 
+# Autopilot: publish experiments the posting pipelines apply automatically (see autopilot.py).
+# False clears every directive on the next report; the pipelines then run as baseline.
+AUTOPILOT_ENABLED = True
+
 # Statistics guards (lessons from the psych channel: n=6 "winners" over-fit the pipeline
 # and collapsed distribution; one viral outlier dominated every average).
 MIN_VIDEOS_FOR_CHANNEL_NORM = 4   # a channel needs this many 48h+ videos to score outliers

@@ -294,6 +294,22 @@ def markdown(results, state, now):
     return "\n".join(L)
 
 
+def autopilot_md(ap, changes):
+    L = ["## Autopilot", ""]
+    if changes:
+        L += ["Changes today:", ""] + [f"- {c.replace('<b>', '**').replace('</b>', '**')}" for c in changes] + [""]
+    for niche, lst in ap["active"].items():
+        for d in lst:
+            e = d.get("last_eval") or {}
+            L.append(f"- **{niche} / {d['feature']}** ({d['lever']}) on {int(d['share'] * 100)}% since "
+                     f"{datetime.fromtimestamp(d['since'], timezone.utc):%Y-%m-%d} · treated n={e.get('treated_n', 0)} "
+                     f"median {e.get('treated_median')} vs control n={e.get('control_n', 0)} "
+                     f"median {e.get('control_median')}")
+    if not any(ap["active"].values()):
+        L.append("- no experiments running")
+    return "\n".join(L) + "\n"
+
+
 def telegram_digest(results, now):
     esc = html.escape
     L = ["📡 <b>Shorts Radar</b>"]
@@ -351,7 +367,9 @@ def main():
         res = analyse_niche(niche, rs, state, now)
         res["hypotheses"] = [] if a.no_llm or res["n_scored"] < 40 else llm_hypotheses(res)
         results.append(res)
-    md = markdown(results, state, now)
+    import autopilot
+    changes, ap = autopilot.run(results, state, archive, a.data, now)
+    md = markdown(results, state, now) + "\n" + autopilot_md(ap, changes)
     day = datetime.fromtimestamp(now, timezone.utc).strftime("%Y-%m-%d")
     for d in ("reports", "insights"):
         os.makedirs(os.path.join(a.data, d), exist_ok=True)
@@ -362,6 +380,8 @@ def main():
         with open(os.path.join(a.data, "insights", f"{res['niche']}.json"), "w", encoding="utf-8") as f:
             json.dump({"generated": round(now), **res}, f, ensure_ascii=False, indent=1)
     digest = telegram_digest(results, now)
+    if changes:
+        digest += "\n\n🤖 <b>Autopilot</b>\n" + "\n".join(changes)
     print(digest)
     if a.send:
         send_telegram(digest)
