@@ -35,24 +35,24 @@ LEVERS = {
         "mate_in_n":         {"lever": "title_mate_in", "eval_on": "title"},
         "emoji":             {"lever": "title_emoji", "eval_on": "title"},
         "hashtags_in_title": {"lever": "title_hashtags", "eval_on": "title"},
+        "caps_word":         {"lever": "title_caps", "eval_on": "title"},
+        "brilliant/blunder": {"lever": "title_power_word", "eval_on": "title"},
     },
     "reddit": {
-        "emoji":          {"lever": "title_emoji", "eval_on": "title"},
-        "family/partner": {"lever": "story_theme", "eval_on": "title+desc"},
-        "revenge":        {"lever": "story_theme", "eval_on": "title+desc"},
-        "aita":           {"lever": "story_theme", "eval_on": "title+desc"},
-        "money/wedding":  {"lever": "story_theme", "eval_on": "title+desc"},
-        "dur21-45s":      {"lever": "length_target", "params": {"seconds": 44}, "eval_on": "duration"},
+        "emoji":             {"lever": "title_emoji", "eval_on": "title"},
+        # LLM title styles: only a style NAME is published; the pipeline owns the prompt text
+        "question":          {"lever": "title_style", "params": {"style": "question"}, "eval_on": "title"},
+        "number":            {"lever": "title_style", "params": {"style": "number"}, "eval_on": "title"},
+        "caps_word":         {"lever": "title_style", "params": {"style": "caps"}, "eval_on": "title"},
+        "short_title(<=6w)": {"lever": "title_style", "params": {"style": "short"}, "eval_on": "title"},
+        "long_title(>=12w)": {"lever": "title_style", "params": {"style": "long"}, "eval_on": "title"},
+        "dur21-45s":         {"lever": "length_target", "params": {"seconds": 44}, "eval_on": "duration"},
+        # story picker: every theme the radar measures
+        **{theme: {"lever": "story_theme", "eval_on": "title+desc"} for theme in F.REDDIT_THEMES},
     },
 }
-# Same regexes as features.title_features, shipped to the pipeline so "story about family"
-# means exactly what the radar measured.
-THEME_PATTERNS = {
-    "family/partner": r"wife|husband|boyfriend|girlfriend|\bbf\b|\bgf\b|\bmil\b|mother|father|sister|brother|parents|fianc",
-    "revenge": r"revenge",
-    "aita": r"\baita|\baitah|asshole",
-    "money/wedding": r"money|\$|inheritance|wedding|rent",
-}
+# Shipped to the pipeline so "a story about family" means exactly what the radar measured.
+THEME_PATTERNS = F.REDDIT_THEMES
 
 MIN_SCORED = 60          # niche needs this many scored videos before anything is switched on
 MIN_LIFT = 1.3
@@ -61,7 +61,7 @@ MIN_N = 12
 MIN_SHARE_TOP = 0.12
 CONFIRM_HOURS = 20       # a feature must keep qualifying this long before it is tested
 CANDIDATE_GRACE_HOURS = 6
-MAX_ACTIVE = 2
+MAX_ACTIVE = 3            # each upload is randomised per experiment, so arms fill in parallel
 START_SHARE, MAX_SHARE = 0.5, 0.75
 MIN_ARM = 6              # matured own videos needed in each arm before judging
 MIN_CONTROL_VIEWS = 20   # below this the channel is not being served at all - nothing to compare
