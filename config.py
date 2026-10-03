@@ -23,7 +23,7 @@ NICHES = {
         "keywords": r"chess|checkmate|♟|mate in|ajedrez|xadrez|schach|échecs|шахмат|catur|cờ vua|scacchi|satran",
     },
     "reddit": {
-        "own_channel": "UCKFVmbFcjKzDo9XrnZ3aerQ",          # @redditstoriesshortzz
+        "own_channel": "UCuGQuuZYvSmgMx4XHdGTAvA",          # @laerehtxam (fresh channel 2026-10-03; old @redditstoriesshortzz was throttled)
         "hashtags": ["redditstories", "redditstory", "askreddit", "aita"],
         "searches": ["reddit stories", "aita reddit story", "reddit story revenge",
                      "reddit relationship story"],
