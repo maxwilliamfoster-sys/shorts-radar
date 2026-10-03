@@ -1,0 +1,459 @@
+{
+ "generated": 1791056823,
+ "niche": "chess",
+ "n_videos": 574,
+ "n_scored": 303,
+ "n_channels": 53,
+ "breaking": [
+  {
+   "title": "💎 MATE IN 2! 🔥 CAN YOU FIND IT? #chess #shorts #hikaru l",
+   "channel": "SMART AVANI",
+   "views": 68577,
+   "ratio": 7.8,
+   "age_h": 33,
+   "duration": 6,
+   "subs": 3390,
+   "url": "https://youtube.com/shorts/n92R6JgSfgA"
+  },
+  {
+   "title": "The Safest King in the World 😂😂",
+   "channel": "Catur Talk Indonesia",
+   "views": 60687,
+   "ratio": 5.6,
+   "age_h": 12,
+   "duration": 6,
+   "subs": 492000,
+   "url": "https://youtube.com/shorts/uhjf1MujA9Q"
+  },
+  {
+   "title": "Avoid This Blunder ⁉️🧩 #chess #rook #siciliandefense #checkmate #shorts",
+   "channel": "YT Chess Sindh",
+   "views": 25229,
+   "ratio": 5.4,
+   "age_h": 26,
+   "duration": 7,
+   "subs": 17400,
+   "url": "https://youtube.com/shorts/-5mMkTSqAoU"
+  },
+  {
+   "title": "Black To Mate In 2 🤔🧩♟️ #chess #rook #puzzle #checkmate #shorts",
+   "channel": "YT Chess Sindh",
+   "views": 24915,
+   "ratio": 5.4,
+   "age_h": 26,
+   "duration": 7,
+   "subs": 17400,
+   "url": "https://youtube.com/shorts/r0tZL0-aHmE"
+  },
+  {
+   "title": "Why this is brilliant❓🧐",
+   "channel": "Catur Talk Indonesia",
+   "views": 57147,
+   "ratio": 5.3,
+   "age_h": 31,
+   "duration": 9,
+   "subs": 492000,
+   "url": "https://youtube.com/shorts/zrEDXZuMnUU"
+  },
+  {
+   "title": "Are you serious? #chess #comedyshorts #comedy #memes #laugh #funny #chessshorts # #comedian",
+   "channel": "EdgarGKN",
+   "views": 5172,
+   "ratio": 4.7,
+   "age_h": 26,
+   "duration": 9,
+   "subs": null,
+   "url": "https://youtube.com/shorts/NKiwkEPKmnA"
+  }
+ ],
+ "top_outliers": [
+  {
+   "title": "DON'T CLICK THE SOUND! #chess #viralvideo #shorts",
+   "channel": "AI Battle Chess",
+   "views": 798887,
+   "ratio": 53.4,
+   "age_h": 122,
+   "duration": 6,
+   "subs": 1490,
+   "url": "https://youtube.com/shorts/7BNzjFp3IoM"
+  },
+  {
+   "title": "Classic Or Custom?",
+   "channel": "Tree House Chess",
+   "views": 1735384,
+   "ratio": 39.2,
+   "age_h": 147,
+   "duration": 18,
+   "subs": null,
+   "url": "https://youtube.com/shorts/2RGnadIPVoY"
+  },
+  {
+   "title": "oscar’s in his villain era #chess   #shorts  #checkmate  #chesspuzzle",
+   "channel": "Duolingo Chess",
+   "views": 764039,
+   "ratio": 30.8,
+   "age_h": 196,
+   "duration": 41,
+   "subs": null,
+   "url": "https://youtube.com/shorts/VYcjYoI5mCg"
+  },
+  {
+   "title": "The Most Disrespectful Move in Chess History?! 💀 #chess #chess #chessshorts",
+   "channel": " CHESS WITH PAPA",
+   "views": 703512,
+   "ratio": 26.4,
+   "age_h": 151,
+   "duration": 26,
+   "subs": null,
+   "url": "https://youtube.com/shorts/x74vQcM01H0"
+  },
+  {
+   "title": "Uzbekistan won chess Olympiad #chess",
+   "channel": "Only Chess",
+   "views": 121570,
+   "ratio": 21.8,
+   "age_h": 115,
+   "duration": 19,
+   "subs": null,
+   "url": "https://youtube.com/shorts/r6bgC05Jm58"
+  },
+  {
+   "title": "he TOOK HIS WHAT OFF?! Witty Alien defeats Magnus Carlsen and celebrates like CRAZY😆",
+   "channel": "Chess.com",
+   "views": 366691,
+   "ratio": 21.1,
+   "age_h": 70,
+   "duration": 31,
+   "subs": 2940000,
+   "url": "https://youtube.com/shorts/5bosYUvp6UQ"
+  },
+  {
+   "title": "It's brilliant bro #chess #foryou #shorts #shortvideo",
+   "channel": "Full Strive",
+   "views": 54485,
+   "ratio": 17.8,
+   "age_h": 148,
+   "duration": 6,
+   "subs": null,
+   "url": "https://youtube.com/shorts/C4BLwkMEbok"
+  },
+  {
+   "title": "💎‼️ CAN YOU EXPLAIN THIS?! #chess #shorts #viral",
+   "channel": "SMART AVANI",
+   "views": 117585,
+   "ratio": 13.4,
+   "age_h": 177,
+   "duration": 8,
+   "subs": 3390,
+   "url": "https://youtube.com/shorts/mq1ZSDI2nQU"
+  }
+ ],
+ "top_quartile_cut": 1.77,
+ "feature_lift": [
+  {
+   "feature": "famous_player",
+   "lift": 1.51,
+   "share_top": 0.184,
+   "share_all": 0.122,
+   "n": 37,
+   "median_outlier": 1.28
+  },
+  {
+   "feature": "can_you",
+   "lift": 1.41,
+   "share_top": 0.079,
+   "share_all": 0.056,
+   "n": 17,
+   "median_outlier": 1.6
+  },
+  {
+   "feature": "mate_in_n",
+   "lift": 1.41,
+   "share_top": 0.079,
+   "share_all": 0.056,
+   "n": 17,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "second_person",
+   "lift": 1.33,
+   "share_top": 0.132,
+   "share_all": 0.099,
+   "n": 30,
+   "median_outlier": 1.37
+  },
+  {
+   "feature": "number",
+   "lift": 1.27,
+   "share_top": 0.184,
+   "share_all": 0.145,
+   "n": 44,
+   "median_outlier": 1.06
+  },
+  {
+   "feature": "posted_06-12utc",
+   "lift": 1.26,
+   "share_top": 0.329,
+   "share_all": 0.261,
+   "n": 79,
+   "median_outlier": 1.14
+  },
+  {
+   "feature": "dur21-45s",
+   "lift": 1.24,
+   "share_top": 0.303,
+   "share_all": 0.244,
+   "n": 74,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "posted_18-24utc",
+   "lift": 1.17,
+   "share_top": 0.132,
+   "share_all": 0.112,
+   "n": 34,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "emoji",
+   "lift": 1.11,
+   "share_top": 0.579,
+   "share_all": 0.521,
+   "n": 158,
+   "median_outlier": 1.09
+  },
+  {
+   "feature": "hashtags_in_title",
+   "lift": 0.97,
+   "share_top": 0.697,
+   "share_all": 0.719,
+   "n": 218,
+   "median_outlier": 1.02
+  },
+  {
+   "feature": "caps_word",
+   "lift": 0.96,
+   "share_top": 0.263,
+   "share_all": 0.274,
+   "n": 83,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "dur<=20s",
+   "lift": 0.96,
+   "share_top": 0.632,
+   "share_all": 0.657,
+   "n": 199,
+   "median_outlier": 1.1
+  },
+  {
+   "feature": "question",
+   "lift": 0.89,
+   "share_top": 0.197,
+   "share_all": 0.221,
+   "n": 67,
+   "median_outlier": 1.06
+  },
+  {
+   "feature": "posted_12-18utc",
+   "lift": 0.88,
+   "share_top": 0.355,
+   "share_all": 0.406,
+   "n": 123,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "short_title(<=6w)",
+   "lift": 0.88,
+   "share_top": 0.487,
+   "share_all": 0.554,
+   "n": 168,
+   "median_outlier": 1.01
+  },
+  {
+   "feature": "posted_00-06utc",
+   "lift": 0.83,
+   "share_top": 0.184,
+   "share_all": 0.221,
+   "n": 67,
+   "median_outlier": 1.07
+  },
+  {
+   "feature": "brilliant/blunder",
+   "lift": 0.78,
+   "share_top": 0.224,
+   "share_all": 0.287,
+   "n": 87,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "dur46-90s",
+   "lift": 0.61,
+   "share_top": 0.053,
+   "share_all": 0.086,
+   "n": 26,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "long_title(>=12w)",
+   "lift": 0.5,
+   "share_top": 0.026,
+   "share_all": 0.053,
+   "n": 16,
+   "median_outlier": 0.87
+  },
+  {
+   "feature": "first_person",
+   "lift": 0.0,
+   "share_top": 0.0,
+   "share_all": 0.033,
+   "n": 10,
+   "median_outlier": 1.0
+  }
+ ],
+ "winning_words": [
+  {
+   "word": "rated",
+   "lift": 3.99,
+   "in_winners": 4
+  },
+  {
+   "word": "puzzle",
+   "lift": 3.19,
+   "in_winners": 4
+  },
+  {
+   "word": "india",
+   "lift": 1.99,
+   "in_winners": 4
+  },
+  {
+   "word": "gukesh",
+   "lift": 1.77,
+   "in_winners": 4
+  },
+  {
+   "word": "bishop",
+   "lift": 1.77,
+   "in_winners": 4
+  },
+  {
+   "word": "white",
+   "lift": 1.77,
+   "in_winners": 4
+  },
+  {
+   "word": "explain",
+   "lift": 1.45,
+   "in_winners": 4
+  },
+  {
+   "word": "mate",
+   "lift": 1.45,
+   "in_winners": 4
+  },
+  {
+   "word": "chess",
+   "lift": 1.29,
+   "in_winners": 22
+  },
+  {
+   "word": "olympiad",
+   "lift": 1.25,
+   "in_winners": 5
+  },
+  {
+   "word": "rook",
+   "lift": 1.14,
+   "in_winners": 8
+  },
+  {
+   "word": "why",
+   "lift": 1.14,
+   "in_winners": 6
+  }
+ ],
+ "duration_bands": {
+  "≤20s": {
+   "n": 199,
+   "median_outlier": 1.1
+  },
+  "46-90s": {
+   "n": 26,
+   "median_outlier": 1.0
+  },
+  "21-45s": {
+   "n": 74,
+   "median_outlier": 1.0
+  }
+ },
+ "you": {
+  "videos": 19,
+  "median_views": 924,
+  "median_v24": 892.5,
+  "niche_small_channels_median_v24": 3239,
+  "niche_small_channels_n": 41,
+  "best": {
+   "title": "Magnus Carlsen found this in a one-minute game. Can you?",
+   "channel": "Candidate Moves · Chess Puzzles",
+   "views": 1303,
+   "ratio": null,
+   "age_h": 100,
+   "duration": 22,
+   "subs": 26,
+   "url": "https://youtube.com/shorts/jkW2l-sF8TQ"
+  },
+  "titles": [
+   "Someone found this against Magnus Carlsen. Can you?",
+   "Magnus Carlsen found this in a one-minute game. Can you? 👀",
+   "I built an AI that roasts Twitch chat at chess #shorts",
+   "This was played against Magnus Carlsen. Can you find it?",
+   "Magnus Carlsen saw this in a one-minute game — can you?",
+   "This was played against Magnus Carlsen. Can you find it?",
+   "Can you find the move Magnus Carlsen played?",
+   "This was played against Magnus Carlsen. Can you find it?",
+   "Even Magnus Carlsen missed this. Can you find it?",
+   "Magnus Carlsen found this in a one-minute game. Can you?"
+  ]
+ },
+ "gaps": [
+  {
+   "feature": "mate_in_n",
+   "lift": 1.41,
+   "share_top": 0.079,
+   "share_all": 0.056,
+   "n": 17,
+   "median_outlier": 1.0,
+   "own_share": 0.0
+  },
+  {
+   "feature": "number",
+   "lift": 1.27,
+   "share_top": 0.184,
+   "share_all": 0.145,
+   "n": 44,
+   "median_outlier": 1.06,
+   "own_share": 0.0
+  }
+ ],
+ "hypotheses": [
+  {
+   "change": "Add a direct question phrase starting with \"Can you\" and include an emoji at the end of the title",
+   "why": "Titles that use a second‑person question and emojis have higher lift (can_you 1.41, emoji 1.14) and many winners combine both, e.g., \"💎‼️ CAN YOU EXPLAIN THIS?! #chess #shorts #viral\" and \"white to mate🔥 Can u Explain?🤔\"",
+   "evidence": [
+    "💎‼️ CAN YOU EXPLAIN THIS?! #chess #shorts #viral",
+    "white to mate🔥 Can u Explain?🤔"
+   ],
+   "how_to_test": "Create two new Shorts titles that follow this pattern (e.g., \"Can you spot the hidden mate? ♟️\" and \"Can you solve this puzzle? 🔥\"). Publish them alongside control titles without the question/emoji and compare view‑through rates over a 7‑day period."
+  },
+  {
+   "change": "Mention a famous player (e.g., \"Magnus Carlsen\") and a specific puzzle type like \"Mate in 2\" in the same title",
+   "why": "The feature lift for famous_player is 2.0 and for mate_in_n is 1.6. Winners combine both, such as \"💎 MATE IN 2! 🔥 CAN YOU FIND IT? #chess #shorts #hikaru l\" and \"How A Chess STREAMER Defeated MAGNUS CARLSEN 🤯🤯\"",
+   "evidence": [
+    "💎 MATE IN 2! 🔥 CAN YOU FIND IT? #chess #shorts #hikaru l",
+    "How A Chess STREAMER Defeated MAGNUS CARLSEN 🤯🤯"
+   ],
+   "how_to_test": "Produce three Shorts with titles like \"Magnus Carlsen's Mate in 2 Challenge 🔥\" and three control Shorts without the famous player or puzzle type. Track average views and watch time for each group over two weeks."
+  }
+ ]
+}

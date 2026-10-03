@@ -1,0 +1,66 @@
+{
+ "active": {
+  "chess": [
+   {
+    "feature": "emoji",
+    "lever": "title_emoji",
+    "params": {},
+    "share": 0.5,
+    "since": 1790977179.8121023,
+    "evidence": {
+     "lift": 1.28,
+     "n": 94,
+     "winners_share": 0.652,
+     "your_share": 0.0
+    },
+    "last_eval": {
+     "treated_n": 0,
+     "control_n": 0,
+     "treated_median": null,
+     "control_median": null
+    }
+   }
+  ],
+  "reddit": [
+   {
+    "feature": "family/partner",
+    "lever": "story_theme",
+    "params": {
+     "pattern": "wife|husband|boyfriend|girlfriend|\\bbf\\b|\\bgf\\b|\\bmil\\b|mother|father|sister|brother|parents|fianc"
+    },
+    "share": 0.5,
+    "since": 1790977179.8121023,
+    "evidence": {
+     "lift": 1.3,
+     "n": 43,
+     "winners_share": 0.237,
+     "your_share": 0.0
+    },
+    "last_eval": {
+     "treated_n": 0,
+     "control_n": 0,
+     "treated_median": null,
+     "control_median": null
+    }
+   }
+  ]
+ },
+ "candidates": {
+  "chess": {},
+  "reddit": {}
+ },
+ "retired": {
+  "chess": {},
+  "reddit": {}
+ },
+ "log": [
+  {
+   "t": 1790977180,
+   "change": "chess: ▶ testing <b>emoji</b> on 50% of uploads (winners 65% vs yours 0%, lift 1.28x, n=94)"
+  },
+  {
+   "t": 1790977180,
+   "change": "reddit: ▶ testing <b>family/partner</b> on 50% of uploads (winners 23% vs yours 0%, lift 1.3x, n=43)"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "generated": 1791056823,
+ "niche": "chess",
+ "directives": [
+  {
+   "feature": "emoji",
+   "lever": "title_emoji",
+   "params": {},
+   "share": 0.5,
+   "since": 1790977179.8121023
+  }
+ ]
+}

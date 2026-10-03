@@ -1,0 +1,437 @@
+{
+ "generated": 1791056823,
+ "niche": "reddit",
+ "n_videos": 511,
+ "n_scored": 300,
+ "n_channels": 49,
+ "breaking": [
+  {
+   "title": "When did you REALIZE...",
+   "channel": "RedditPear",
+   "views": 8487,
+   "ratio": 5.4,
+   "age_h": 27,
+   "duration": 180,
+   "subs": 36800,
+   "url": "https://youtube.com/shorts/tcoK700ieEo"
+  },
+  {
+   "title": "People in ARRANGED...",
+   "channel": "RedditPear",
+   "views": 6656,
+   "ratio": 4.3,
+   "age_h": 15,
+   "duration": 180,
+   "subs": 36800,
+   "url": "https://youtube.com/shorts/qlW1c_eOGw0"
+  },
+  {
+   "title": "If I was your car",
+   "channel": "Jiggle Jiggle",
+   "views": 16480,
+   "ratio": 4.1,
+   "age_h": 18,
+   "duration": 37,
+   "subs": null,
+   "url": "https://youtube.com/shorts/C-naXXmU_Gk"
+  },
+  {
+   "title": "What Are Parents Naming Their Kids These Days?! #reddit",
+   "channel": "BREAD BANG",
+   "views": 16006,
+   "ratio": 3.7,
+   "age_h": 10,
+   "duration": 17,
+   "subs": null,
+   "url": "https://youtube.com/shorts/MwUwEZzK9Gw"
+  },
+  {
+   "title": "Do dogs really love us?",
+   "channel": "Jiggle Jiggle",
+   "views": 11871,
+   "ratio": 2.9,
+   "age_h": 27,
+   "duration": 41,
+   "subs": null,
+   "url": "https://youtube.com/shorts/_ziLMvchJD8"
+  },
+  {
+   "title": "They Said I Was Just Overreacting—Then I Collapsed In Front Of Everyone",
+   "channel": "HeartLine_Talk ",
+   "views": 6599,
+   "ratio": 2.9,
+   "age_h": 31,
+   "duration": 52,
+   "subs": null,
+   "url": "https://youtube.com/shorts/kPsPT2QHfNI"
+  }
+ ],
+ "top_outliers": [
+  {
+   "title": "What's the craziest coincidence that happened to you?",
+   "channel": "Sally Reddit ",
+   "views": 782744,
+   "ratio": 13.6,
+   "age_h": 147,
+   "duration": 64,
+   "subs": null,
+   "url": "https://youtube.com/shorts/ukyZNApUwLY"
+  },
+  {
+   "title": "I never did the gas chamber in basic training, but my official record says I did",
+   "channel": "pengweitales1",
+   "views": 1159,
+   "ratio": 12.7,
+   "age_h": 79,
+   "duration": 29,
+   "subs": null,
+   "url": "https://youtube.com/shorts/1Cy2k41Kym8"
+  },
+  {
+   "title": "What was the incident at your high school?",
+   "channel": "Sally Reddit ",
+   "views": 714061,
+   "ratio": 12.4,
+   "age_h": 123,
+   "duration": 61,
+   "subs": null,
+   "url": "https://youtube.com/shorts/ZWAqRQ8ADYs"
+  },
+  {
+   "title": "What's the most mortifying thing your little sister did that accidentally got you a girlfriend?",
+   "channel": "Relationship Reader",
+   "views": 315355,
+   "ratio": 12.0,
+   "age_h": 165,
+   "duration": 179,
+   "subs": null,
+   "url": "https://youtube.com/shorts/KxHcIES-sRg"
+  },
+  {
+   "title": "My parents forced me to marry my 🤐 #crazily #shorts #redditstories #reddit #explorepage",
+   "channel": "reddit sawariya ",
+   "views": 2178,
+   "ratio": 10.4,
+   "age_h": 70,
+   "duration": 63,
+   "subs": 138,
+   "url": "https://youtube.com/shorts/LE_4ktsLt6c"
+  },
+  {
+   "title": "What is your word?",
+   "channel": "Humour Of V",
+   "views": 42169,
+   "ratio": 8.9,
+   "age_h": 194,
+   "duration": 36,
+   "subs": null,
+   "url": "https://youtube.com/shorts/uThio0mp-Ms"
+  },
+  {
+   "title": "Was This Creepy Or Just A Coincidence? #reddit",
+   "channel": "BREAD BANG",
+   "views": 31438,
+   "ratio": 7.3,
+   "age_h": 85,
+   "duration": 18,
+   "subs": null,
+   "url": "https://youtube.com/shorts/ssKZULFinaM"
+  },
+  {
+   "title": "My grandparents gotta chill… #reddit",
+   "channel": "BREAD BANG",
+   "views": 31020,
+   "ratio": 7.2,
+   "age_h": 61,
+   "duration": 20,
+   "subs": null,
+   "url": "https://youtube.com/shorts/9IHzMxBrwlk"
+  }
+ ],
+ "top_quartile_cut": 1.66,
+ "feature_lift": [
+  {
+   "feature": "first_person",
+   "lift": 1.37,
+   "share_top": 0.733,
+   "share_all": 0.537,
+   "n": 161,
+   "median_outlier": 1.19
+  },
+  {
+   "feature": "cheating",
+   "lift": 1.33,
+   "share_top": 0.04,
+   "share_all": 0.03,
+   "n": 9,
+   "median_outlier": 1.23
+  },
+  {
+   "feature": "work/school",
+   "lift": 1.33,
+   "share_top": 0.147,
+   "share_all": 0.11,
+   "n": 33,
+   "median_outlier": 1.35
+  },
+  {
+   "feature": "family/partner",
+   "lift": 1.26,
+   "share_top": 0.24,
+   "share_all": 0.19,
+   "n": 57,
+   "median_outlier": 1.18
+  },
+  {
+   "feature": "long_title(>=12w)",
+   "lift": 1.24,
+   "share_top": 0.4,
+   "share_all": 0.323,
+   "n": 97,
+   "median_outlier": 1.19
+  },
+  {
+   "feature": "posted_18-24utc",
+   "lift": 1.23,
+   "share_top": 0.413,
+   "share_all": 0.337,
+   "n": 101,
+   "median_outlier": 1.15
+  },
+  {
+   "feature": "dur>90s",
+   "lift": 1.21,
+   "share_top": 0.253,
+   "share_all": 0.21,
+   "n": 63,
+   "median_outlier": 1.18
+  },
+  {
+   "feature": "entitled/neighbor",
+   "lift": 1.2,
+   "share_top": 0.04,
+   "share_all": 0.033,
+   "n": 10,
+   "median_outlier": 1.03
+  },
+  {
+   "feature": "dur46-90s",
+   "lift": 1.13,
+   "share_top": 0.293,
+   "share_all": 0.26,
+   "n": 78,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "second_person",
+   "lift": 1.11,
+   "share_top": 0.2,
+   "share_all": 0.18,
+   "n": 54,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "dur<=20s",
+   "lift": 1.09,
+   "share_top": 0.12,
+   "share_all": 0.11,
+   "n": 33,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "posted_00-06utc",
+   "lift": 1.0,
+   "share_top": 0.16,
+   "share_all": 0.16,
+   "n": 48,
+   "median_outlier": 1.14
+  },
+  {
+   "feature": "posted_06-12utc",
+   "lift": 1.0,
+   "share_top": 0.147,
+   "share_all": 0.147,
+   "n": 44,
+   "median_outlier": 1.03
+  },
+  {
+   "feature": "money/wedding",
+   "lift": 0.94,
+   "share_top": 0.053,
+   "share_all": 0.057,
+   "n": 17,
+   "median_outlier": 1.01
+  },
+  {
+   "feature": "number",
+   "lift": 0.87,
+   "share_top": 0.067,
+   "share_all": 0.077,
+   "n": 23,
+   "median_outlier": 1.01
+  },
+  {
+   "feature": "question",
+   "lift": 0.87,
+   "share_top": 0.2,
+   "share_all": 0.23,
+   "n": 69,
+   "median_outlier": 1.02
+  },
+  {
+   "feature": "hashtags_in_title",
+   "lift": 0.84,
+   "share_top": 0.44,
+   "share_all": 0.523,
+   "n": 157,
+   "median_outlier": 1.04
+  },
+  {
+   "feature": "dur21-45s",
+   "lift": 0.79,
+   "share_top": 0.333,
+   "share_all": 0.42,
+   "n": 126,
+   "median_outlier": 1.11
+  },
+  {
+   "feature": "posted_12-18utc",
+   "lift": 0.79,
+   "share_top": 0.28,
+   "share_all": 0.357,
+   "n": 107,
+   "median_outlier": 1.02
+  },
+  {
+   "feature": "short_title(<=6w)",
+   "lift": 0.79,
+   "share_top": 0.173,
+   "share_all": 0.22,
+   "n": 66,
+   "median_outlier": 1.05
+  },
+  {
+   "feature": "emoji",
+   "lift": 0.62,
+   "share_top": 0.227,
+   "share_all": 0.363,
+   "n": 109,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "caps_word",
+   "lift": 0.44,
+   "share_top": 0.053,
+   "share_all": 0.12,
+   "n": 36,
+   "median_outlier": 0.94
+  },
+  {
+   "feature": "pov/story_hook",
+   "lift": 0.16,
+   "share_top": 0.013,
+   "share_all": 0.083,
+   "n": 25,
+   "median_outlier": 0.94
+  }
+ ],
+ "winning_words": [
+  {
+   "word": "never",
+   "lift": 2.67,
+   "in_winners": 6
+  },
+  {
+   "word": "had",
+   "lift": 2.29,
+   "in_winners": 4
+  },
+  {
+   "word": "mom",
+   "lift": 2.0,
+   "in_winners": 4
+  },
+  {
+   "word": "got",
+   "lift": 2.0,
+   "in_winners": 4
+  },
+  {
+   "word": "family",
+   "lift": 1.87,
+   "in_winners": 7
+  },
+  {
+   "word": "one",
+   "lift": 1.78,
+   "in_winners": 4
+  },
+  {
+   "word": "did",
+   "lift": 1.33,
+   "in_winners": 5
+  },
+  {
+   "word": "then",
+   "lift": 0.91,
+   "in_winners": 5
+  }
+ ],
+ "duration_bands": {
+  "21-45s": {
+   "n": 126,
+   "median_outlier": 1.11
+  },
+  "46-90s": {
+   "n": 78,
+   "median_outlier": 1.0
+  },
+  ">90s": {
+   "n": 63,
+   "median_outlier": 1.18
+  },
+  "≤20s": {
+   "n": 33,
+   "median_outlier": 1.0
+  }
+ },
+ "you": {
+  "videos": 0,
+  "median_views": null,
+  "median_v24": null,
+  "niche_small_channels_median_v24": 1355.0,
+  "niche_small_channels_n": 24,
+  "best": null,
+  "titles": []
+ },
+ "gaps": [],
+ "hypotheses": [
+  {
+   "change": "Add a personal, second‑person hook that asks viewers directly about a surprising or emotional experience",
+   "why": "Winner titles that directly address the audience with a question (“What’s the craziest coincidence that happened to you?”, “What was the incident at your high school?”) drive higher engagement, and the feature lift shows first_person and second_person phrasing boost performance",
+   "evidence": [
+    "What's the craziest coincidence that happened to you?",
+    "What was the incident at your high school?"
+   ],
+   "how_to_test": "Create three new Shorts that start with a direct question to the viewer (e.g., “Did something crazy ever happen to you?”) and keep the rest of the format similar to existing content. Compare average view‑through rate and total views to the baseline three recent titles over a 7‑day period."
+  },
+  {
+   "change": "Incorporate emotionally charged family or relationship scenarios in the title",
+   "why": "Titles involving family or partners (“My parents forced me to marry my 🤐…”, “My sister‑in‑law exploded when my Chinese mother‑in‑law gave me her jade bracelet…”) have a lift, and the feature lift shows family/partner keywords add a boost",
+   "evidence": [
+    "My parents forced me to marry my 🤐 #crazily #shorts #redditstories #reddit #explorepage",
+    "My sister-in-law exploded when my Chinese mother-in-law gave me her jade bracelet instead of her."
+   ],
+   "how_to_test": "Produce three Shorts featuring a dramatic family or partner story in the title and thumbnail. Track view counts and engagement metrics for a week and compare to the previous non‑family titles."
+  },
+  {
+   "change": "Use capitalized key words to emphasize the core hook",
+   "why": "The ‘caps_word’ feature shows a lift of 1.12, indicating that capitalizing a standout word draws attention; winner titles often contain capitalized emphasis (e.g., “When did you REALIZE...”, “They Said I Was Just Overreacting—Then I Collapsed In Front Of Everyone”)",
+   "evidence": [
+    "When did you REALIZE...",
+    "They Said I Was Just Overreacting—Then I Collapsed In Front Of Everyone"
+   ],
+   "how_to_test": "Create three Shorts where one word in the title is fully capitalized to highlight the main hook (e.g., “My DOG finally saved me”). Measure click‑through rate and total views versus the same titles without capitalization over a 5‑day test."
+  }
+ ]
+}

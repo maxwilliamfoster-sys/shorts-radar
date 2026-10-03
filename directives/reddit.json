@@ -1,0 +1,15 @@
+{
+ "generated": 1791056823,
+ "niche": "reddit",
+ "directives": [
+  {
+   "feature": "family/partner",
+   "lever": "story_theme",
+   "params": {
+    "pattern": "wife|husband|boyfriend|girlfriend|\\bbf\\b|\\bgf\\b|\\bmil\\b|mother|father|sister|brother|parents|fianc"
+   },
+   "share": 0.5,
+   "since": 1790977179.8121023
+  }
+ ]
+}
