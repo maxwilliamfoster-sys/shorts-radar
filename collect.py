@@ -99,15 +99,26 @@ def active_channels(state):
 
 
 def snapshot(state, actives, now):
-    ok = fail = new = 0
+    """RSS sweep. Returns (ok, fail, failed_channel_ids)."""
+    ok = fail = new = streak = 0
+    failed = []
     for niche, cids in actives.items():
         for cid in cids:
+            # YouTube's RSS feeds sometimes 404 for EVERY channel for hours (2026-10-03,
+            # ~01:00-07:00 UTC). After 10 failures in a row, stop hammering them this sweep.
+            if streak >= 10:
+                fail += 1
+                failed.append(cid)
+                continue
             title, entries = sources.fetch_rss(cid)
             time.sleep(0.25)
             if entries is None:
                 fail += 1
+                streak += 1
+                failed.append(cid)
                 continue
             ok += 1
+            streak = 0
             c = state["channels"][cid]
             c["title"] = title
             # channel norm: median views of its Shorts aged 2-14 days (what a "normal" video does)
@@ -134,7 +145,45 @@ def snapshot(state, actives, now):
                 v["desc"] = e["desc"][:300]
                 v["s"].append([round(now), e["views"]])
     print(f"[rss] {ok} channels read, {fail} failed, {new} new Shorts")
-    return ok, fail
+    return ok, fail, failed
+
+
+def api_fallback(state, api, failed, now):
+    """Keep the view curves going through an RSS outage with the Data API.
+    Our own channels: also catch new uploads (they are what the experiments are judged on).
+    Everything else: snapshot already-tracked videos, youngest first (the first 72h is the
+    curve that matters), within FALLBACK_UNITS_PER_SWEEP."""
+    if not failed or not api.ok:
+        return
+    failed = set(failed)
+    budget = config.FALLBACK_UNITS_PER_SWEEP
+    for niche, cfg in config.NICHES.items():
+        own = cfg["own_channel"]
+        if own in failed and budget > 0:
+            budget -= 1
+            for vid in api.recent_uploads(own):
+                if vid not in state["videos"]:
+                    state["videos"][vid] = {"c": own, "n": niche, "p": None, "s": [], "first_seen": now}
+    ids = sorted((vid for vid, v in state["videos"].items() if v["c"] in failed),
+                 key=lambda vid: -(state["videos"][vid]["p"] or now))
+    ids = ids[:max(0, budget) * 50]
+    info = api.videos(ids)
+    n = 0
+    for vid in ids:
+        v = state["videos"][vid]
+        i = info.get(vid)
+        if not i:
+            if v["p"] is None:                       # an own upload we could not read - drop it
+                del state["videos"][vid]
+            continue
+        if v["p"] is None:
+            if (i["duration"] or 0) > config.MAX_SHORT_SECONDS or now - i["published"] > config.TRACK_DAYS * 86400:
+                del state["videos"][vid]
+                continue
+            v.update(p=i["published"], t=i["title"], desc="", d=i["duration"])
+        v["s"].append([round(now), i["views"]])
+        n += 1
+    print(f"[api-fallback] RSS failed for {len(failed)} channels - {n} videos snapshotted via the Data API")
 
 
 def enrich(state, api, now):
@@ -195,7 +244,8 @@ def main():
     api = sources.DataAPI(state, a.token)
     run_discovery(state, api, now, a.discover)
     actives = active_channels(state)
-    ok, fail = snapshot(state, actives, now)
+    ok, fail, failed = snapshot(state, actives, now)
+    api_fallback(state, api, failed, now)
     enrich(state, api, now)
     for v in state["videos"].values():
         compact(v, now)

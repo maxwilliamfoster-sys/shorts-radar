@@ -83,6 +83,8 @@ def discover(niche_cfg: dict):
              for q in niche_cfg["searches"]]
     for u in urls:
         for e in _ytdlp_flat(u, config.DISCOVERY_PER_SOURCE):
+            if not isinstance(e, dict):          # yt-dlp yields None for entries it failed to read
+                continue
             vid = e.get("id")
             if not vid or len(vid) != 11:
                 continue
@@ -154,6 +156,18 @@ class DataAPI:
                     "comments": int(st.get("commentCount", 0)),
                 }
         return out
+
+    def recent_uploads(self, channel_id, n=10):
+        """Latest upload ids via the channel's uploads playlist (1 unit). RSS-outage fallback."""
+        if not self.ok or not channel_id.startswith("UC") or not self._spend(1):
+            return []
+        try:
+            r = self.yt.playlistItems().list(part="contentDetails", playlistId="UU" + channel_id[2:],
+                                             maxResults=n).execute()
+            return [it["contentDetails"]["videoId"] for it in r.get("items", [])]
+        except Exception as e:
+            print(f"[api] playlistItems {channel_id}: {e}", file=sys.stderr)
+            return []
 
     def subscribers(self, channel_ids):
         out = {}

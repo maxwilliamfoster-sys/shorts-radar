@@ -361,7 +361,11 @@ def main():
     now = time.time()
     state, archive = load(a.data)
     hour = datetime.now(timezone.utc).hour
-    digest_due = not a.if_due or (now - state["meta"].get("last_report", 0) >= 20 * H and hour >= 7)
+    # Once per UTC day, first sweep after 07:00. (A "20h since the last report" rule let one
+    # manual report at 21:39 push the next morning's digest to 17:39.)
+    today = datetime.fromtimestamp(now, timezone.utc).date()
+    last_day = datetime.fromtimestamp(state["meta"].get("last_report", 0), timezone.utc).date()
+    digest_due = not a.if_due or (hour >= 7 and last_day < today)
     rs = rows(state, archive, now)
     results = []
     prev = {}

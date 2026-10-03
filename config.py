@@ -37,7 +37,8 @@ MAX_SHORT_SECONDS = 180        # YouTube Shorts limit
 TRACK_DAYS = 8                 # snapshot a video for this long, then archive its summary
 DISCOVERY_EVERY_HOURS = 6      # yt-dlp is slow and the channel set changes slowly
 DISCOVERY_PER_SOURCE = 40
-QUOTA_CAP_PER_DAY = 400        # Data API units the radar may spend (Pacific-day reset ~ UTC 07/08)
+QUOTA_CAP_PER_DAY = 700        # Data API units the radar may spend (the uploads use ~1,600 each; room left: ~2,000)
+FALLBACK_UNITS_PER_SWEEP = 10  # RSS-outage fallback: up to 500 tracked videos per sweep
 SUBS_REFRESH_HOURS = 24
 MIN_RELEVANCE = 0.3
 
