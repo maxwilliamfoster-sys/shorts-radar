@@ -45,6 +45,8 @@ while :; do
     [ "${FORCE:-}" = "true" ] && aargs=""
     [ "${START_NOW:-}" = "true" ] && aargs="--start-now"
   fi
+  # start the posting workflows when a slot is due (needs RADAR_DISPATCH_TOKEN; see trigger.py)
+  python trigger.py --data data || echo "[loop] trigger failed"
   if python collect.py --data data $cargs; then
     python analyze.py --data data --send $aargs || echo "[loop] analyze failed (data still saved)"
     if save_data; then FAILS=0; else FAILS=$((FAILS + 1)); echo "[loop] save failed"; fi
