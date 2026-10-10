@@ -1,0 +1,495 @@
+{
+ "generated": 1791657551,
+ "niche": "reddit",
+ "n_videos": 1243,
+ "n_scored": 666,
+ "n_channels": 77,
+ "breaking": [
+  {
+   "title": "Text To Speech 🐸 ASMR Cake Storytime @Marrka dams #risas #humor #gracioso #parati #funnyclips",
+   "channel": "Fonda Runyon",
+   "views": 166914,
+   "ratio": 32.2,
+   "age_h": 30,
+   "duration": 32,
+   "subs": 2390000,
+   "url": "https://youtube.com/shorts/Z6FAM8beSlw"
+  },
+  {
+   "title": "A heart-wrenching Reddit story about a husband #crazily #shorts #redditstories #reddit #explorepage",
+   "channel": "reddit sawariya ",
+   "views": 1152,
+   "ratio": 18.4,
+   "age_h": 21,
+   "duration": 45,
+   "subs": 138,
+   "url": "https://youtube.com/shorts/xdm__okcjYs"
+  },
+  {
+   "title": "Text To Speech 🍭 ASMR Cake Storytime @Marrka dams #comedy #pov #relatable #fypシ #peru #skit #noflop",
+   "channel": "Fonda Runyon",
+   "views": 94944,
+   "ratio": 18.3,
+   "age_h": 12,
+   "duration": 49,
+   "subs": 2390000,
+   "url": "https://youtube.com/shorts/1kNFYkNCREA"
+  },
+  {
+   "title": "Text To Speech 🦉 ASMR Cake Storytime @Marrka dams #jokes #lol #parati #trending #storytimeskit",
+   "channel": "Fonda Runyon",
+   "views": 91114,
+   "ratio": 17.6,
+   "age_h": 24,
+   "duration": 42,
+   "subs": 2390000,
+   "url": "https://youtube.com/shorts/VFnmc1EwPWk"
+  },
+  {
+   "title": "Text To Speech 🐠 ASMR Cake Storytime @Marrka dams #comedy #skit #cakestorytime #redditstories #fypシ",
+   "channel": "Fonda Runyon",
+   "views": 61805,
+   "ratio": 11.9,
+   "age_h": 33,
+   "duration": 67,
+   "subs": 2390000,
+   "url": "https://youtube.com/shorts/NZfS32NWKEc"
+  },
+  {
+   "title": "Text To Speech 🐢 ASMR Cake Storytime @Marrka dams #humor #relatable #redditreadings #asmrfunny",
+   "channel": "Fonda Runyon",
+   "views": 48384,
+   "ratio": 9.3,
+   "age_h": 27,
+   "duration": 35,
+   "subs": 2390000,
+   "url": "https://youtube.com/shorts/xdcr0iAbKY4"
+  }
+ ],
+ "top_outliers": [
+  {
+   "title": "My parents forced me to marry my 🤐 #crazily #shorts #redditstories #reddit #explorepage",
+   "channel": "reddit sawariya ",
+   "views": 2946,
+   "ratio": 40.1,
+   "age_h": 237,
+   "duration": 63,
+   "subs": 139,
+   "url": "https://youtube.com/shorts/LE_4ktsLt6c"
+  },
+  {
+   "title": "What was the incident at your high school?",
+   "channel": "Sally Reddit ",
+   "views": 748723,
+   "ratio": 21.1,
+   "age_h": 290,
+   "duration": 61,
+   "subs": 3220,
+   "url": "https://youtube.com/shorts/ZWAqRQ8ADYs"
+  },
+  {
+   "title": "What's the craziest coincidence that happened to you?",
+   "channel": "Sally Reddit ",
+   "views": 800413,
+   "ratio": 20.3,
+   "age_h": 314,
+   "duration": 64,
+   "subs": 3190,
+   "url": "https://youtube.com/shorts/ukyZNApUwLY"
+  },
+  {
+   "title": "What's the most mortifying thing your little sister did that accidentally got you a girlfriend?",
+   "channel": "Relationship Reader",
+   "views": 318718,
+   "ratio": 15.8,
+   "age_h": 332,
+   "duration": 179,
+   "subs": 34100,
+   "url": "https://youtube.com/shorts/KxHcIES-sRg"
+  },
+  {
+   "title": "My cheating fiancé stole my wedding for his other bride #cheatingstory #redditstories",
+   "channel": "Riffat Philanthropy ",
+   "views": 1618,
+   "ratio": 13.2,
+   "age_h": 176,
+   "duration": 73,
+   "subs": 1440,
+   "url": "https://youtube.com/shorts/YAD71uiyHGM"
+  },
+  {
+   "title": "Am I Evil? 😳",
+   "channel": "slimeshadystories",
+   "views": 622205,
+   "ratio": 12.2,
+   "age_h": 120,
+   "duration": 64,
+   "subs": 24600,
+   "url": "https://youtube.com/shorts/uawjGiO_-eM"
+  },
+  {
+   "title": "My husband cheated on his work wife… With a third woman #redditstory",
+   "channel": "Riffat Philanthropy ",
+   "views": 1437,
+   "ratio": 11.7,
+   "age_h": 128,
+   "duration": 73,
+   "subs": 1440,
+   "url": "https://youtube.com/shorts/3w7w6_CZLH8"
+  },
+  {
+   "title": "My husband cheated with his Coworker… But she was jealous of another woman #redditstories",
+   "channel": "Riffat Philanthropy ",
+   "views": 1415,
+   "ratio": 11.5,
+   "age_h": 79,
+   "duration": 68,
+   "subs": 1440,
+   "url": "https://youtube.com/shorts/9nkcveSuBok"
+  }
+ ],
+ "top_quartile_cut": 1.66,
+ "feature_lift": [
+  {
+   "feature": "cheating",
+   "lift": 1.81,
+   "share_top": 0.06,
+   "share_all": 0.033,
+   "n": 22,
+   "median_outlier": 1.29
+  },
+  {
+   "feature": "family/partner",
+   "lift": 1.2,
+   "share_top": 0.251,
+   "share_all": 0.21,
+   "n": 140,
+   "median_outlier": 1.14
+  },
+  {
+   "feature": "posted_06-12utc",
+   "lift": 1.19,
+   "share_top": 0.192,
+   "share_all": 0.161,
+   "n": 107,
+   "median_outlier": 1.12
+  },
+  {
+   "feature": "first_person",
+   "lift": 1.15,
+   "share_top": 0.641,
+   "share_all": 0.557,
+   "n": 371,
+   "median_outlier": 1.08
+  },
+  {
+   "feature": "dur>90s",
+   "lift": 1.14,
+   "share_top": 0.216,
+   "share_all": 0.189,
+   "n": 126,
+   "median_outlier": 1.05
+  },
+  {
+   "feature": "work/school",
+   "lift": 1.1,
+   "share_top": 0.132,
+   "share_all": 0.12,
+   "n": 80,
+   "median_outlier": 1.03
+  },
+  {
+   "feature": "dur<=20s",
+   "lift": 1.08,
+   "share_top": 0.132,
+   "share_all": 0.122,
+   "n": 81,
+   "median_outlier": 1.07
+  },
+  {
+   "feature": "short_title(<=6w)",
+   "lift": 1.08,
+   "share_top": 0.21,
+   "share_all": 0.194,
+   "n": 129,
+   "median_outlier": 1.1
+  },
+  {
+   "feature": "second_person",
+   "lift": 1.07,
+   "share_top": 0.198,
+   "share_all": 0.185,
+   "n": 123,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "emoji",
+   "lift": 1.04,
+   "share_top": 0.323,
+   "share_all": 0.312,
+   "n": 208,
+   "median_outlier": 1.07
+  },
+  {
+   "feature": "entitled/neighbor",
+   "lift": 1.03,
+   "share_top": 0.042,
+   "share_all": 0.041,
+   "n": 27,
+   "median_outlier": 1.07
+  },
+  {
+   "feature": "long_title(>=12w)",
+   "lift": 1.03,
+   "share_top": 0.359,
+   "share_all": 0.348,
+   "n": 232,
+   "median_outlier": 1.06
+  },
+  {
+   "feature": "posted_12-18utc",
+   "lift": 1.03,
+   "share_top": 0.359,
+   "share_all": 0.35,
+   "n": 233,
+   "median_outlier": 1.06
+  },
+  {
+   "feature": "dur21-45s",
+   "lift": 1.0,
+   "share_top": 0.407,
+   "share_all": 0.407,
+   "n": 271,
+   "median_outlier": 1.09
+  },
+  {
+   "feature": "question",
+   "lift": 0.97,
+   "share_top": 0.222,
+   "share_all": 0.228,
+   "n": 152,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "posted_18-24utc",
+   "lift": 0.92,
+   "share_top": 0.323,
+   "share_all": 0.35,
+   "n": 233,
+   "median_outlier": 1.07
+  },
+  {
+   "feature": "posted_00-06utc",
+   "lift": 0.9,
+   "share_top": 0.126,
+   "share_all": 0.14,
+   "n": 93,
+   "median_outlier": 1.08
+  },
+  {
+   "feature": "dur46-90s",
+   "lift": 0.87,
+   "share_top": 0.246,
+   "share_all": 0.282,
+   "n": 188,
+   "median_outlier": 1.08
+  },
+  {
+   "feature": "hashtags_in_title",
+   "lift": 0.8,
+   "share_top": 0.383,
+   "share_all": 0.479,
+   "n": 319,
+   "median_outlier": 1.09
+  },
+  {
+   "feature": "money/wedding",
+   "lift": 0.72,
+   "share_top": 0.054,
+   "share_all": 0.075,
+   "n": 50,
+   "median_outlier": 1.15
+  },
+  {
+   "feature": "caps_word",
+   "lift": 0.55,
+   "share_top": 0.042,
+   "share_all": 0.077,
+   "n": 51,
+   "median_outlier": 1.15
+  },
+  {
+   "feature": "number",
+   "lift": 0.51,
+   "share_top": 0.054,
+   "share_all": 0.105,
+   "n": 70,
+   "median_outlier": 1.11
+  },
+  {
+   "feature": "pov/story_hook",
+   "lift": 0.51,
+   "share_top": 0.024,
+   "share_all": 0.047,
+   "n": 31,
+   "median_outlier": 1.05
+  },
+  {
+   "feature": "aita",
+   "lift": 0.5,
+   "share_top": 0.006,
+   "share_all": 0.012,
+   "n": 8,
+   "median_outlier": 1.31
+  }
+ ],
+ "winning_words": [
+  {
+   "word": "fianc",
+   "lift": 3.19,
+   "in_winners": 4
+  },
+  {
+   "word": "work",
+   "lift": 2.66,
+   "in_winners": 4
+  },
+  {
+   "word": "everyone",
+   "lift": 2.49,
+   "in_winners": 5
+  },
+  {
+   "word": "law",
+   "lift": 2.39,
+   "in_winners": 6
+  },
+  {
+   "word": "stole",
+   "lift": 2.28,
+   "in_winners": 4
+  },
+  {
+   "word": "rule",
+   "lift": 2.28,
+   "in_winners": 4
+  },
+  {
+   "word": "car",
+   "lift": 2.22,
+   "in_winners": 5
+  },
+  {
+   "word": "accidentally",
+   "lift": 1.99,
+   "in_winners": 9
+  },
+  {
+   "word": "parents",
+   "lift": 1.99,
+   "in_winners": 7
+  },
+  {
+   "word": "one",
+   "lift": 1.9,
+   "in_winners": 10
+  },
+  {
+   "word": "became",
+   "lift": 1.81,
+   "in_winners": 5
+  },
+  {
+   "word": "saw",
+   "lift": 1.81,
+   "in_winners": 5
+  }
+ ],
+ "duration_bands": {
+  "21-45s": {
+   "n": 271,
+   "median_outlier": 1.09
+  },
+  "46-90s": {
+   "n": 188,
+   "median_outlier": 1.08
+  },
+  ">90s": {
+   "n": 126,
+   "median_outlier": 1.05
+  },
+  "≤20s": {
+   "n": 81,
+   "median_outlier": 1.07
+  }
+ },
+ "you": {
+  "videos": 11,
+  "median_views": 3,
+  "median_v24": 0,
+  "niche_small_channels_median_v24": 1615.0,
+  "niche_small_channels_n": 424,
+  "best": {
+   "title": "Manager said label my stuff. I labeled the desk itself. #reddit #shorts",
+   "channel": "Reddit Side Takers",
+   "views": 54,
+   "ratio": null,
+   "age_h": 139,
+   "duration": 64,
+   "subs": 0,
+   "url": "https://youtube.com/shorts/ogYU02IbqJE"
+  },
+  "titles": [
+   "Lyft driver stole my AirPods, I tracked him to Chuck E Cheese #reddit #shorts",
+   "HOA cut my tree, I turned it into a neon nightmare #reddit #shorts",
+   "She hid the twins' dad from me - then I stole her ring #reddit #shorts",
+   "He booked my best friend to strip and everything fell apart #reddit #shorts",
+   "He projected her affair at their own engagement party #reddit #shorts",
+   "He left for Canada with his ex - my reaction #reddit #shorts",
+   "Manager said label my stuff. I labeled the desk itself. #reddit #shorts",
+   "She Crawled Through the Hatch in a Miniskirt #reddit #shorts",
+   "The kid who turned a bully's demand into a $120 surprise #reddit #shorts",
+   "They told me to stay late, I walked out at five #reddit #shorts"
+  ]
+ },
+ "gaps": [
+  {
+   "feature": "family/partner",
+   "lift": 1.2,
+   "share_top": 0.251,
+   "share_all": 0.21,
+   "n": 140,
+   "median_outlier": 1.14,
+   "own_share": 0.0
+  }
+ ],
+ "hypotheses": [
+  {
+   "change": "Add a direct question prompt in the title using second‑person phrasing and keep it under 20 seconds.",
+   "why": "Titles that ask a question and use second‑person wording have higher lift, and short durations (<20s) boost performance.",
+   "evidence": [
+    "What was the incident at your high school?",
+    "What's the craziest coincidence that happened to you?"
+   ],
+   "how_to_test": "Create 6 new Shorts with titles like \"What happened at your school?\" or \"What's the craziest coincidence you experienced?\" each under 20 s, post them at the same time of day as previous uploads, and compare view‑through rates to the baseline batch."
+  },
+  {
+   "change": "Incorporate family or partner keywords and a personal first‑person hook in the title.",
+   "why": "The feature lift shows family/partner (+1.21) and first‑person (+1.14) both improve share among top videos.",
+   "evidence": [
+    "What's the most mortifying thing your little sister did that accidentally got you a girlfriend?",
+    "My sister announced she was pregnant by my ex, so I congratulated her..."
+   ],
+   "how_to_test": "Produce 4 Shorts with titles such as \"My brother's secret ruined my date\" or \"My mom's surprise made me quit my job\" and track their view counts and engagement against the last 10 non‑family titles."
+  },
+  {
+   "change": "Use emojis and a mystery hook in the title, keeping the title length under 12 words.",
+   "why": "Winners often include emojis and intrigue (e.g., mystery) and longer titles only give a slight lift (1.03), so a concise, emoji‑rich title is more efficient.",
+   "evidence": [
+    "My parents forced me to marry my 🤐 #crazily #shorts #redditstories #reddit #explorepage",
+    "📸 The Photographer Asked Why I Was in a Photo Taken Before I Was Born 😳 #MysteryStory #RedditStories"
+   ],
+   "how_to_test": "Release 5 Shorts with titles like \"🤐 My dad forced me to marry…\" or \"📸 Who took my photo before I was born? 😳\" and compare CTR and watch time to previous titles without emojis."
+  }
+ ]
+}
