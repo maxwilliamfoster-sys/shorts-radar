@@ -1,7 +1,10 @@
 # Shorts Radar
 
-Watches the YouTube Shorts market around two automated channels, **Candidate Moves** (chess puzzles) and **Reddit stories**.
-It runs continuously on GitHub Actions (a sweep every 30 minutes, self-restarting; see `loop.sh`), re-judges experiments every sweep, and sends a daily report to Telegram.
+Watches the YouTube Shorts chess-puzzle niche around **Candidate Moves** and sends a daily report to Telegram.
+It runs once a day on GitHub Actions (07:00 UTC, plus manual `workflow_dispatch`). It is read-only: it never changes
+the posting pipeline. (Until 2026-10-12 it also tracked Reddit stories and ran an "autopilot" that pushed title
+experiments into the pipelines; both were retired because the reddit channel was stopped and no experiment ever
+reached a verdict.)
 
 ## What it does
 
@@ -12,30 +15,8 @@ It runs continuously on GitHub Actions (a sweep every 30 minutes, self-restartin
 3. **Scores** each Short against its own channel's normal video (median of its 2-14 day old Shorts).
    A 10x outlier on a 3k-sub channel is worth as much attention as one on a 3M-sub channel.
 4. **Reports daily**: what is breaking out right now, the biggest outliers, which title/length/timing traits
-   over-index among the top quarter, how your channels compare with small rivals, and proposed experiments.
-
-## Autopilot: changes applied automatically, as experiments
-
-`autopilot.py` publishes `directives/<niche>.json` on the `data` branch. The chess and reddit pipelines read it at
-upload time through `radar_directives.py` and apply it themselves.
-
-- **What qualifies:** a trait over-indexes among the top quarter of competitor Shorts (lift ≥1.3, n ≥12) and your
-  titles rarely use it. It must also qualify in two reports at least 20h apart.
-- **Levers it can touch:** chess titles (mate-in-N tag, emoji, hashtags); reddit titles (emoji), which story the
-  editor picks (family/partner, revenge, AITA, money/wedding themes), and story length (44s). It never touches puzzle
-  facts, the narration gate, quality gates, cadence or privacy.
-- **Rollout:** each change starts on 50% of uploads, so the rest are a live control group. One change per lever,
-  at most two per channel.
-- **Judging:** after ≥6 treated and ≥6 control uploads reach 48h, treated ≥1.2x control is promoted to 75% (never
-  100%; variety is a ranking input). Treated <0.8x is retired with a 14-day cooldown. Anything not clearly winning
-  after 30 days is retired too.
-- **Fail-safe:** directives older than 72h, unknown levers or fetch errors leave the pipeline on baseline.
-  To switch off, set `AUTOPILOT_ENABLED = False` in `config.py` (clears everything on the next report), or set
-  `RADAR_AUTOPILOT=0` in a pipeline.
-- **Reporting:** every start, promotion and retirement is announced in the Telegram report.
-
-This design exists because of the psych channel (Aug 2026): hard-coding what six "winners" shared concentrated
-the content, and distribution collapsed.
+   over-index among the top quarter, how your channel compares with small rivals (views at 24h), and proposed
+   experiments for a human to review.
 
 ## What it deliberately does not do
 
@@ -49,11 +30,10 @@ the content, and distribution collapsed.
 | | |
 |---|---|
 | `config.py` | niches, seeds, limits |
-| `sources.py` | RSS, yt-dlp discovery, Data API (quota-capped at 400 units/day; the uploads share the project) |
+| `sources.py` | RSS, yt-dlp discovery, Data API (quota-capped at `QUOTA_CAP_PER_DAY`; the uploads share the project) |
 | `collect.py` | one sweep |
 | `features.py` | view interpolation, outlier score, title features |
 | `analyze.py` | report → `reports/latest.md`, `insights/<niche>.json`, Telegram |
-| `autopilot.py` | starts, promotes and retires experiments → `directives/<niche>.json` |
 
 Data lives on the `data` branch as a single force-pushed commit: `state.json` (live curves),
 `archive/YYYY-MM.jsonl` (one row per video after 8 days, the long-term learning set), `reports/`, `insights/`.

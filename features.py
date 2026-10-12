@@ -10,19 +10,6 @@ _EMOJI = re.compile("[\U0001F300-\U0001FAFF☀-➿⭐‼⁉]")
 _WORD = re.compile(r"[a-z0-9']+")
 
 
-# Reddit story themes. ONE definition: the radar measures competitors with these, the autopilot
-# ships the same pattern to the pipeline's story picker, and judges our uploads with it too.
-REDDIT_THEMES = {
-    "aita": r"\baita|\baitah|asshole",
-    "revenge": r"revenge",
-    "family/partner": r"wife|husband|boyfriend|girlfriend|\bbf\b|\bgf\b|\bmil\b|mother|father|sister|brother|parents|fianc",
-    "money/wedding": r"money|\$|inheritance|wedding|rent\b",
-    "cheating": r"cheat|affair|\bex\b|ex-",
-    "work/school": r"\bboss|coworker|co-worker|manager|\bjob\b|\bwork|teacher|professor|school|class\b",
-    "entitled/neighbor": r"entitled|karen|neighbou?r|\bhoa\b|landlord|stranger",
-}
-
-
 def views_at(v, hours):
     """Views at `hours` after publish, linearly interpolated between snapshots.
     None if the curve does not cover that age (we only saw it before, or only well after)."""
@@ -76,10 +63,6 @@ def title_features(title: str, niche: str, duration=None, published=None):
         f["famous_player"] = any(n in low + " " for n in config.FAMOUS_CHESS)
         f["mate_in_n"] = bool(re.search(r"mate in \d|checkmate in", low))
         f["brilliant/blunder"] = bool(re.search(r"brilliant|blunder|genius|insane|trap", low))
-    if niche == "reddit":
-        for name, pat in REDDIT_THEMES.items():
-            f[name] = bool(re.search(pat, low))
-        f["pov/story_hook"] = bool(re.search(r"\bpov\b|storytime|story time", low))
     if duration:
         f["dur<=20s"] = duration <= 20
         f["dur21-45s"] = 20 < duration <= 45

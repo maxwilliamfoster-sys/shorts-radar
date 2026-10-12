@@ -37,11 +37,17 @@ def save(state, data_dir):
 
 
 def ensure_own(state):
-    # A replaced own channel (reddit moved to a fresh channel 2026-10-03) must stop
-    # counting as "you" - drop it from tracking entirely.
+    # A replaced own channel must stop counting as "you" - drop it from tracking entirely.
     current = {cfg["own_channel"] for cfg in config.NICHES.values()}
     for cid in [cid for cid, c in state["channels"].items() if c.get("own") and cid not in current]:
         del state["channels"][cid]
+    # Forget niches that were removed from config (reddit, 2026-10-12).
+    for cid, c in list(state["channels"].items()):
+        c["hits"] = {n: h for n, h in c["hits"].items() if n in config.NICHES}
+        if not c["hits"] and not c.get("own"):
+            del state["channels"][cid]
+    for vid in [vid for vid, v in state["videos"].items() if v["n"] not in config.NICHES]:
+        del state["videos"][vid]
     for niche, cfg in config.NICHES.items():
         c = state["channels"].setdefault(cfg["own_channel"], {"hits": {}, "first_seen": time.time()})
         c["own"] = niche

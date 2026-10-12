@@ -1,39 +1,24 @@
-name: Radar sweep
+name: Radar daily report
 
-# Runs continuously. Each run sweeps every 30 min for ~5.5h (loop.sh), then starts the next
-# run of this workflow itself. The cron is only a backstop that restarts the chain if it ever
-# breaks; while a run is live, the concurrency group just queues it.
+# Once a day: one sweep of the chess Shorts niche, then the report (Telegram + data branch).
+# Read-only: it never touches the posting pipelines.
 # Data lives on the `data` branch as ONE force-pushed commit, so history never grows.
 on:
   schedule:
-    - cron: "11 */2 * * *"
+    - cron: "0 7 * * *"
   workflow_dispatch:
-    inputs:
-      report:
-        description: "Send the full report on the first sweep"
-        type: boolean
-        default: false
-      discover:
-        description: "Run channel discovery on the first sweep"
-        type: boolean
-        default: false
-      start_now:
-        description: "Autopilot: start qualifying experiments now (implies a report)"
-        type: boolean
-        default: false
 
 permissions:
   contents: write
-  actions: write
 
 concurrency:
   group: radar
   cancel-in-progress: false
 
 jobs:
-  sweep:
+  report:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -47,25 +32,34 @@ jobs:
           YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
         run: if [ -n "$YOUTUBE_TOKEN" ]; then printf '%s' "$YOUTUBE_TOKEN" > token.json; fi
 
-      - name: Sweep loop
+      - name: Load data branch
+        run: |
+          git clone -q --depth 1 --branch data "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data || mkdir -p data
+          rm -rf data/.git
+          # leftovers from the retired autopilot/trigger/reddit tracking (2026-10-12)
+          rm -rf data/directives data/autopilot.json data/trigger.json data/insights/reddit.json
+
+      - name: Collect
+        run: python collect.py --data data
+
+      - name: Report
         env:
-          GH_TOKEN: ${{ github.token }}
-          RADAR_DISPATCH_TOKEN: ${{ secrets.RADAR_DISPATCH_TOKEN }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          FORCE: ${{ inputs.report }}
-          DISCOVER: ${{ inputs.discover }}
-          START_NOW: ${{ inputs.start_now }}
-        run: bash loop.sh
+        run: python analyze.py --data data --send
 
-      - name: Start the next run
+      - name: Save data branch
         if: ${{ !cancelled() }}
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
-          if [ -f .chain_ok ]; then gh workflow run radar.yml --ref main -R "${{ github.repository }}"
-          else echo "run was too short or failing - leaving the restart to the cron backstop"; fi
+          [ -f data/state.json ] || exit 0
+          cd data
+          git init -q -b data
+          git config user.name "shorts-radar"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -qm "radar data $(date -u +%FT%TZ)"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data
 
       - name: Alert on failure
         if: failure()
@@ -75,4 +69,4 @@ jobs:
         run: |
           curl -s -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
-            --data-urlencode "text=⚠️ Shorts Radar run failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            --data-urlencode "text=⚠️ Shorts Radar daily report failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

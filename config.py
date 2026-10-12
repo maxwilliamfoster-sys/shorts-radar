@@ -9,8 +9,8 @@ Data sources and their costs:
     Free, no quota.
   * YouTube Data API (optional, needs token.json) - only to map a discovered video to
     its channel, get durations/likes/comments and subscriber counts. Capped at
-    QUOTA_CAP_PER_DAY because the same Google project uploads the chess and reddit
-    videos (~1,600 units per upload, ~8,000/day already spoken for).
+    QUOTA_CAP_PER_DAY because the same Google project is used for uploads
+    (~1,600 units per upload).
 """
 
 NICHES = {
@@ -22,29 +22,17 @@ NICHES = {
         # a channel stays watched only if >=30% of its Shorts mention one of these (title+description)
         "keywords": r"chess|checkmate|♟|mate in|ajedrez|xadrez|schach|échecs|шахмат|catur|cờ vua|scacchi|satran",
     },
-    "reddit": {
-        "own_channel": "UCuGQuuZYvSmgMx4XHdGTAvA",          # @laerehtxam (fresh channel 2026-10-03; old @redditstoriesshortzz was throttled)
-        "hashtags": ["redditstories", "redditstory", "askreddit", "aita"],
-        "searches": ["reddit stories", "aita reddit story", "reddit story revenge",
-                     "reddit relationship story"],
-        # story channels often never say "reddit", so relationship/family drama words count too
-        "keywords": r"reddit|aita|aitah|r/|stor(y|ies)|askreddit|tifu|entitled|revenge|cheat|husband|wife|boyfriend|girlfriend|fianc|in-law|sister|brother|mom|dad",
-    },
 }
 
 CHANNELS_PER_NICHE = 45        # competitor channels polled every run (by discovery hits)
 MAX_SHORT_SECONDS = 180        # YouTube Shorts limit
 TRACK_DAYS = 8                 # snapshot a video for this long, then archive its summary
-DISCOVERY_EVERY_HOURS = 6      # yt-dlp is slow and the channel set changes slowly
+DISCOVERY_EVERY_HOURS = 6      # with the daily run this means: discover on every run
 DISCOVERY_PER_SOURCE = 40
 QUOTA_CAP_PER_DAY = 700        # Data API units the radar may spend (the uploads use ~1,600 each; room left: ~2,000)
 FALLBACK_UNITS_PER_SWEEP = 10  # RSS-outage fallback: up to 500 tracked videos per sweep
-SUBS_REFRESH_HOURS = 24
+SUBS_REFRESH_HOURS = 20        # < 24 so the once-a-day run always refreshes despite cron jitter
 MIN_RELEVANCE = 0.3
-
-# Autopilot: publish experiments the posting pipelines apply automatically (see autopilot.py).
-# False clears every directive on the next report; the pipelines then run as baseline.
-AUTOPILOT_ENABLED = True
 
 # Statistics guards (lessons from the psych channel: n=6 "winners" over-fit the pipeline
 # and collapsed distribution; one viral outlier dominated every average).

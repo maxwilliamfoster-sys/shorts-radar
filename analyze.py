@@ -12,7 +12,6 @@ channel's distribution collapsed.)
 
     py analyze.py --data <dir>                 write reports/ + insights/, print digest
     py analyze.py --data <dir> --send          ...and send the digest to Telegram
-    py analyze.py --data <dir> --send --if-due only if the last report is >20h old (CI)
 """
 
 import argparse
@@ -294,22 +293,6 @@ def markdown(results, state, now):
     return "\n".join(L)
 
 
-def autopilot_md(ap, changes):
-    L = ["## Autopilot", ""]
-    if changes:
-        L += ["Changes today:", ""] + [f"- {c.replace('<b>', '**').replace('</b>', '**')}" for c in changes] + [""]
-    for niche, lst in ap["active"].items():
-        for d in lst:
-            e = d.get("last_eval") or {}
-            L.append(f"- **{niche} / {d['feature']}** ({d['lever']}) on {int(d['share'] * 100)}% since "
-                     f"{datetime.fromtimestamp(d['since'], timezone.utc):%Y-%m-%d} · treated n={e.get('treated_n', 0)} "
-                     f"median {e.get('treated_median')} vs control n={e.get('control_n', 0)} "
-                     f"median {e.get('control_median')}")
-    if not any(ap["active"].values()):
-        L.append("- no experiments running")
-    return "\n".join(L) + "\n"
-
-
 def telegram_digest(results, now):
     esc = html.escape
     L = ["📡 <b>Shorts Radar</b>"]
@@ -352,39 +335,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default="data")
     ap.add_argument("--send", action="store_true")
-    ap.add_argument("--if-due", action="store_true",
-                    help="every-sweep mode: analysis + autopilot always run; the full digest is sent only "
-                         "once a day (first sweep after 07:00 UTC), autopilot changes are sent immediately")
-    ap.add_argument("--start-now", action="store_true", help="autopilot: start qualifying experiments without the 20h confirmation")
     ap.add_argument("--no-llm", action="store_true")
     a = ap.parse_args()
     now = time.time()
     state, archive = load(a.data)
-    hour = datetime.now(timezone.utc).hour
-    # Once per UTC day, first sweep after 07:00. (A "20h since the last report" rule let one
-    # manual report at 21:39 push the next morning's digest to 17:39.)
-    today = datetime.fromtimestamp(now, timezone.utc).date()
-    last_day = datetime.fromtimestamp(state["meta"].get("last_report", 0), timezone.utc).date()
-    digest_due = not a.if_due or (hour >= 7 and last_day < today)
     rs = rows(state, archive, now)
     results = []
-    prev = {}
-    for niche in config.NICHES:
-        p = os.path.join(a.data, "insights", f"{niche}.json")
-        if os.path.exists(p):
-            with open(p, encoding="utf-8") as f:
-                prev[niche] = json.load(f).get("hypotheses", [])
     for niche in config.NICHES:
         res = analyse_niche(niche, rs, state, now)
-        # the LLM runs once a day with the digest; sweeps in between keep the last hypotheses
-        if digest_due and not a.no_llm and res["n_scored"] >= 40:
-            res["hypotheses"] = llm_hypotheses(res)
-        else:
-            res["hypotheses"] = prev.get(niche, [])
+        res["hypotheses"] = llm_hypotheses(res) if not a.no_llm and res["n_scored"] >= 40 else []
         results.append(res)
-    import autopilot
-    changes, ap = autopilot.run(results, state, archive, a.data, now, a.start_now)
-    md = markdown(results, state, now) + "\n" + autopilot_md(ap, changes)
+    md = markdown(results, state, now)
     day = datetime.fromtimestamp(now, timezone.utc).strftime("%Y-%m-%d")
     for d in ("reports", "insights"):
         os.makedirs(os.path.join(a.data, d), exist_ok=True)
@@ -394,21 +355,11 @@ def main():
     for res in results:
         with open(os.path.join(a.data, "insights", f"{res['niche']}.json"), "w", encoding="utf-8") as f:
             json.dump({"generated": round(now), **res}, f, ensure_ascii=False, indent=1)
-    if digest_due:
-        msg = telegram_digest(results, now)
-        if changes:
-            msg += "\n\n🤖 <b>Autopilot</b>\n" + "\n".join(changes)
-        state["meta"]["last_report"] = now
-    elif changes:
-        msg = "🤖 <b>Shorts Radar autopilot</b>\n" + "\n".join(changes)
-    else:
-        msg = None
-        print("[report] digest not due, no autopilot changes")
-    if msg:
-        print(msg)
-        if a.send:
-            send_telegram(msg)
-    state["meta"]["last_analyze"] = now
+    msg = telegram_digest(results, now)
+    print(msg)
+    if a.send:
+        send_telegram(msg)
+    state["meta"]["last_report"] = now
     with open(os.path.join(a.data, "state.json"), "w", encoding="utf-8") as f:
         json.dump(state, f, ensure_ascii=False, separators=(",", ":"))
 
