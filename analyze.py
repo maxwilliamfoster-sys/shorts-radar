@@ -26,6 +26,7 @@ import urllib.request
 from datetime import datetime, timezone
 
 import coach
+import history
 import config
 import features as F
 
@@ -357,7 +358,17 @@ def main():
         with open(os.path.join(a.data, "reports", name), "w", encoding="utf-8") as f:
             f.write(md)
     for res in results:
-        res["claude_prompt"] = coach.build_prompt(res, now) if res["niche"] == "chess" else None
+        hist_path = os.path.join(a.data, "insights", f"lift_history_{res['niche']}.json")
+        if os.path.exists(hist_path):
+            with open(hist_path, encoding="utf-8") as f:
+                hist = json.load(f)
+        else:                                   # first run: rebuild the past from the dated reports
+            hist = history.seed_from_reports(os.path.join(a.data, "reports"))
+        history.update(hist, day, {x["feature"]: x["lift"] for x in res["feature_lift"]})
+        res["stability"] = history.stability(hist, day)
+        with open(hist_path, "w", encoding="utf-8") as f:
+            json.dump(hist, f, ensure_ascii=False, separators=(",", ":"))
+        res["claude_prompt"] =coach.build_prompt(res, now) if res["niche"] == "chess" else None
         with open(os.path.join(a.data, "insights", f"{res['niche']}.json"), "w", encoding="utf-8") as f:
             json.dump({"generated": round(now), **res}, f, ensure_ascii=False, indent=1)
         if res["claude_prompt"]:

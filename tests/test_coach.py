@@ -43,6 +43,8 @@ def result(**over):
                 "best": {"title": OWN[0], "views": 1545, "url": "https://youtube.com/shorts/own1"},
                 "titles": OWN, "durations": [21, 22, 21, 23, 21, 20]},
         "winner_median_duration": 11,
+        "stability": {"long_title(>=12w)": {"days_above": 6, "days_seen": 7},
+                      "number": {"days_above": 2, "days_seen": 7}},
         "gaps": [{"feature": "posted_06-12utc", "lift": 1.21, "share_top": 0.35, "n": 353, "own_share": 0.08}],
         "hypotheses": [{"change": "Add a number hook", "why": "numbers lift 1.21",
                         "evidence": ["a", "b"], "how_to_test": "A/B 8 vs 8"}],
@@ -104,6 +106,28 @@ class BuildPrompt(unittest.TestCase):
                                       winner_median_duration=None), NOW)
         self.assertIn("not enough", p.lower())
         self.assertNotIn("What over-indexes", p)
+
+    def test_separates_patterns_that_held_all_week_from_one_day_flukes(self):
+        p = coach.build_prompt(result(), NOW)
+        held = p.split("Held up most of the week")[1].split("\n\n")[0]
+        self.assertIn("long_title(>=12w)", held)
+        self.assertIn("6 of 7", held)
+        self.assertNotIn("number", held)
+        self.assertIn("2 of 7", p.split("What over-indexes")[1].split("\n\n")[0])
+
+    def test_when_nothing_held_it_says_not_to_start_tests(self):
+        p = coach.build_prompt(result(stability={"number": {"days_above": 2, "days_seen": 7}}), NOW)
+        self.assertNotIn("Held up most of the week", p)
+        self.assertIn("No pattern has held", p)
+        self.assertIn("do not start a new test", p.lower())
+
+    def test_asks_claude_to_pick_the_weeks_ab_tests_without_touching_running_ones(self):
+        p = coach.build_prompt(result(), NOW)
+        self.assertIn("EXPERIMENTS.md", p)
+        self.assertIn("experiments.py", p)
+        self.assertIn("running", p.lower())
+        self.assertIn("stay rate", p.lower())
+        self.assertIn("up to 2", p)
 
     def test_missing_own_data_does_not_crash(self):
         p = coach.build_prompt(result(you={"videos": 0, "titles": [], "durations": []}), NOW)

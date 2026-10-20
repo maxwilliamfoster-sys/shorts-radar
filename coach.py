@@ -6,6 +6,8 @@ import re
 import statistics
 from datetime import datetime, timezone
 
+import history
+
 MIN_SCORED = 40          # below this the lift table is noise (same bar as the LLM hypotheses)
 MIN_LIFT = 1.1
 # The data branch is public, so the local folder is not written here; Bot HQ swaps this token in.
@@ -13,11 +15,12 @@ REPO = "@@REPO@@"
 NOTE = "chess_puzzle_automation.md"
 RULES = ("Rules: £0 only. Never weaken or bypass the narration gate, the upload gate or the fact checks. "
          "Don't disturb running A/B tests - add new ideas as new experiments with their own control.")
-ASK = ("Using this evidence, propose the 3 changes most likely to raise views for @CandidateMoves, "
-       "ranked, each with the exact title / format / timing change, how we would A/B it and what result "
-       "counts as a win. Read the memory note first and drop anything it says was already tried. Then "
-       "implement the top one in the chess pipeline as an experiment: failing test first, push, and "
-       "confirm the next real run is green.")
+ASK = ("This is the weekly pick of A/B tests from the radar. Read EXPERIMENTS.md and experiments.py first: list the "
+       "tests already running and leave them alone. Then choose up to 2 NEW tests, only from the patterns that held "
+       "up most of the week, each a single change that runs as its own 50/50 flip (so it cannot muddy a running test). "
+       "For each: the exact change, why the data supports it, the arm size and the win condition on stay rate "
+       "(not views). If nothing qualifies, say so and do not start a new test. Implement the chosen ones in "
+       "experiments.py: failing test first, push, and confirm the next real run is green.")
 
 
 def _num(n):
@@ -36,6 +39,10 @@ def _own_repeat(titles):
     return (name, n) if n >= 3 and n * 2 >= len(titles) else None
 
 
+def _days(s):
+    return f" [{s['days_above']} of {s['days_seen']} days]" if s else ""
+
+
 def _example(v):
     bits = [f'"{v["title"]}"']
     if v.get("ratio"):
@@ -50,6 +57,7 @@ def _example(v):
 def build_prompt(res, now):
     day = datetime.fromtimestamp(now, timezone.utc).strftime("%Y-%m-%d")
     you = res.get("you") or {}
+    stab = res.get("stability") or {}
     out = [
         f"Improve my chess Shorts channel (@CandidateMoves). Repo: {REPO} (GitHub: chess-puzzle-automation).",
         "",
@@ -85,7 +93,15 @@ def build_prompt(res, now):
                     "(share in winners vs share overall):"]
             out[-1] += "\n" + "\n".join(
                 f"- {l['feature']}: {l['lift']}x ({round(l['share_top'] * 100)}% vs "
-                f"{round(l['share_all'] * 100)}%, n={l['n']})" for l in levers[:8])
+                f"{round(l['share_all'] * 100)}%, n={l['n']})" + _days(stab.get(l["feature"])) for l in levers[:8])
+        held = [(l, stab[l["feature"]]) for l in levers if history.is_stable(stab.get(l["feature"]))]
+        if held:
+            out += ["", "Held up most of the week (over-indexed on most of the last 7 daily reports):"]
+            out[-1] += "\n" + "\n".join(
+                f"- {l['feature']}: {s['days_above']} of {s['days_seen']} days at {history.BAR}x or more" for l, s in held)
+        else:
+            out += ["", "No pattern has held for most of the week yet, so any lift above may be a one-day fluke. "
+                    "Do not start a new test from this data alone."]
         if res.get("winning_words"):
             out += ["", "Words over-represented in winning titles: " + ", ".join(
                 f"{w['word']} ({w['lift']}x)" for w in res["winning_words"][:10]) + "."]
