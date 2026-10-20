@@ -15,12 +15,14 @@ REPO = "@@REPO@@"
 NOTE = "chess_puzzle_automation.md"
 RULES = ("Rules: £0 only. Never weaken or bypass the narration gate, the upload gate or the fact checks. "
          "Don't disturb running A/B tests - add new ideas as new experiments with their own control.")
-ASK = ("This is the weekly pick of A/B tests from the radar. Read EXPERIMENTS.md and experiments.py first: list the "
-       "tests already running and leave them alone. Then choose up to 2 NEW tests, only from the patterns that held "
-       "up most of the week, each a single change that runs as its own 50/50 flip (so it cannot muddy a running test). "
-       "For each: the exact change, why the data supports it, the arm size and the win condition on stay rate "
-       "(not views). If nothing qualifies, say so and do not start a new test. Implement the chosen ones in "
-       "experiments.py: failing test first, push, and confirm the next real run is green.")
+ASK = ("This is the weekly radar read. The chess bot's nightly experiment loop already starts and judges tests by "
+       "itself from levers.json, in the order the radar's stable patterns suggest, and it never runs more than one at "
+       "a time. Read EXPERIMENTS.md, experiments.py and levers.json first: list what is running and what is queued, "
+       "and leave them alone. Then propose up to 2 NEW levers worth adding to levers.json, only from the patterns that "
+       "held up most of the week and that are not already queued. For each: the exact change, why the data supports it, "
+       "and whether it should be judged on stay rate or views@72h. If nothing qualifies, say so. For the one you rate "
+       "highest, implement it as an off-by-default lever: failing test first, a sample render "
+       "(send_sample.yml with loop_values), push, and confirm the next real run is green.")
 
 
 def _num(n):

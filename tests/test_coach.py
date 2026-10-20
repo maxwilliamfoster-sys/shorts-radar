@@ -127,7 +127,8 @@ class BuildPrompt(unittest.TestCase):
         self.assertIn("experiments.py", p)
         self.assertIn("running", p.lower())
         self.assertIn("stay rate", p.lower())
-        self.assertIn("up to 2", p)
+        self.assertIn("up to 2 NEW levers", p)
+        self.assertIn("levers.json", p)
 
     def test_missing_own_data_does_not_crash(self):
         p = coach.build_prompt(result(you={"videos": 0, "titles": [], "durations": []}), NOW)
