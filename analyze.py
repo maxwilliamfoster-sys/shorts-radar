@@ -27,6 +27,7 @@ from datetime import datetime, timezone
 
 import coach
 import history
+import priority
 import config
 import features as F
 
@@ -366,6 +367,11 @@ def main():
             hist = history.seed_from_reports(os.path.join(a.data, "reports"))
         history.update(hist, day, {x["feature"]: x["lift"] for x in res["feature_lift"]})
         res["stability"] = history.stability(hist, day)
+        if res["niche"] == "chess":
+            os.makedirs(os.path.join(a.data, "directives"), exist_ok=True)
+            with open(os.path.join(a.data, "directives", "chess_priority.json"), "w", encoding="utf-8") as f:
+                json.dump(priority.chess_priority(res["stability"], datetime.fromtimestamp(now, timezone.utc)
+                                                  .strftime("%Y-%m-%dT%H:%M:%SZ")), f, indent=1)
         with open(hist_path, "w", encoding="utf-8") as f:
             json.dump(hist, f, ensure_ascii=False, separators=(",", ":"))
         res["claude_prompt"] =coach.build_prompt(res, now) if res["niche"] == "chess" else None
