@@ -25,6 +25,7 @@ import time
 import urllib.request
 from datetime import datetime, timezone
 
+import coach
 import config
 import features as F
 
@@ -157,7 +158,10 @@ def analyse_niche(niche, rs, state, now):
         "niche_small_channels_n": len(small),
         "best": _brief(max(own_recent, key=lambda r: r["views"]), None) if own_recent else None,
         "titles": [r["title"] for r in own_recent[:10]],
+        "durations": [r["duration"] for r in own_recent[:10]],
     }
+    top_dur = [r["duration"] for r in scored if r["duration"] and r["outlier"] >= res.get("top_quartile_cut", 1e9)]
+    res["winner_median_duration"] = statistics.median(top_dur) if len(top_dur) >= config.MIN_FEATURE_N else None
     # winning features your recent titles under-use
     gaps = []
     if own_recent and lifts:
@@ -353,8 +357,12 @@ def main():
         with open(os.path.join(a.data, "reports", name), "w", encoding="utf-8") as f:
             f.write(md)
     for res in results:
+        res["claude_prompt"] = coach.build_prompt(res, now) if res["niche"] == "chess" else None
         with open(os.path.join(a.data, "insights", f"{res['niche']}.json"), "w", encoding="utf-8") as f:
             json.dump({"generated": round(now), **res}, f, ensure_ascii=False, indent=1)
+        if res["claude_prompt"]:
+            with open(os.path.join(a.data, "reports", f"{res['niche']}_prompt.txt"), "w", encoding="utf-8") as f:
+                f.write(res["claude_prompt"])
     msg = telegram_digest(results, now)
     print(msg)
     if a.send:
