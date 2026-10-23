@@ -1,0 +1,66 @@
+Improve my chess Shorts channel (@CandidateMoves). Repo: @@REPO@@ (GitHub: chess-puzzle-automation).
+
+Evidence from my Shorts Radar on 2026-10-23: 76 competitor channels, 1820 Shorts tracked, 1229 old enough to score. Outlier score = a Short's views divided by that channel's normal Short.
+
+Where I am: my last 24 Shorts median 784 views at 24h; small competitors (<50k subs, n=920) median 5,686.
+
+Warning: Magnus Carlsen is in 9 of 10 of my recent titles. The channel may be running one formula; check whether it is wearing out.
+
+Length: my Shorts run a median 18s; the winning Shorts run a median 11s.
+
+What over-indexes among the top quarter of competitor Shorts (share in winners vs share overall):
+- long_title(>=12w): 1.37x (4% vs 3%, n=38) [7 of 7 days]
+- posted_00-06utc: 1.21x (30% vs 25%, n=306) [4 of 7 days]
+- posted_06-12utc: 1.12x (31% vs 28%, n=342) [7 of 7 days]
+- dur21-45s: 1.11x (23% vs 20%, n=252) [6 of 7 days]
+- mate_in_n: 1.1x (4% vs 4%, n=51) [7 of 7 days]
+
+Held up most of the week (over-indexed on most of the last 7 daily reports):
+- long_title(>=12w): 7 of 7 days at 1.1x or more
+- posted_06-12utc: 7 of 7 days at 1.1x or more
+- dur21-45s: 6 of 7 days at 1.1x or more
+- mate_in_n: 7 of 7 days at 1.1x or more
+
+Words over-represented in winning titles: reverse (2.67x), won (2.5x), carlsen (2.11x), fork (2.0x), elo (2.0x), get (1.78x), wins (1.63x), sac (1.6x), did (1.6x), championship (1.6x).
+
+Breaking now (under 36h old and already beating their channel):
+- "1 million iq #chess" · 11.9x its channel's normal · 615,052 views in 29h · 73s · https://youtube.com/shorts/_QJDbyAmitM
+- "watch out oscar, eddy plays chess #shorts #checkmate #chesspuzzle" · 3.8x its channel's normal · 67,403 views in 21h · 26s · https://youtube.com/shorts/xg3SL3U4fUw
+- "4 move checkmate trap!☠️#chess#checkmate#chessstap#chesscom#chesswin#chessgame" · 2.7x its channel's normal · 7,070 views in 33h · 13s · https://youtube.com/shorts/GqDmODydgZc
+- "BRILLIANT MOVE 💎💎💎#chess #chessgame #chesspuzzle#ajedrez #checkmate #magnuscarlsen#шахматы#shorts" · 2.1x its channel's normal · 48,483 views in 18h · 9s · https://youtube.com/shorts/USi4Szs7GtA
+- "This rook play is almost impossible to see #chess #shorts #onlinechessworld" · 2.1x its channel's normal · 3,984 views in 29h · 7s · https://youtube.com/shorts/lbkT7NCmOA4
+- "ROOK! Do you see why it works?🧐" · 2.0x its channel's normal · 30,043 views in 35h · 8s · https://youtube.com/shorts/hzq4hrsQhEA
+
+Biggest recent outliers:
+- "Genuinely in hell #chess #foryou #shorts #shortvideo" · 203.2x its channel's normal · 40,135 views · 6s · https://youtube.com/shorts/Si9IMkgPoCA
+- "The Fake Fruit Trick That Fooled Millions! 😱 #usa" · 37.7x its channel's normal · 2,626,753 views · 20s · https://youtube.com/shorts/dt2qaMkziE4
+- "Watch cool trick #chess #foryou #shorts #shortvideo" · 31.8x its channel's normal · 26,227 views · 7s · https://youtube.com/shorts/KXItO4O3NDI
+- "Magnus Carlsen TROLLS Praggnanandhaa😂😂 #chess #chessshorts #magnuscarlsen #praggnanandhaa #funny" · 29.9x its channel's normal · 1,200,812 views · 25s · https://youtube.com/shorts/uaiHBfhE1EY
+- "Magnus Carlsen Reveals His Top 5 Ballon d'Or Picks" · 26.9x its channel's normal · 194,654 views · 11s · https://youtube.com/shorts/hGccVw1rJew
+- "The Safest King in the World 😂😂" · 24.8x its channel's normal · 208,724 views · 6s · https://youtube.com/shorts/uhjf1MujA9Q
+
+The radar's own proposals (unverified; weigh them yourself):
+- Add a short, punchy hook at the start of the title using emojis and a surprising claim, then include a relevant hashtag block at the end. Why: Winners often begin with eye‑catching phrases or emojis (e.g., "Genuinely in hell #chess #foryou #shorts #shortvideo" and "Magnus Carlsen TROLLS Praggnanandhaa😂😂 #chess #chessshorts #magnuscarlsen #praggnanandhaa #funny") and they consistently use hashtag clusters, which correlates with higher lift Test: Create two variants of the next 10 Shorts: one with the new hook+emoji+hashtag format and one keeping the current title style. Track view‑through rate and average views per Short over a 7‑day period.
+- Include a numeric element (e.g., "1 million iq", "4 move checkmate trap") in every title. Why: The feature lift shows "number" has a lift of 1.08, and winners frequently contain numbers ("1 million iq #chess" and "4 move checkmate trap!☠️#chess#checkmate#chessstap#chesscom#chesswin#chessgame") Test: Produce 10 Shorts with a clear numeric hook (e.g., "3‑move mate", "5‑second puzzle") and 10 Shorts without numbers. Compare the average view count and engagement (likes, comments) after 48 hours.
+- Post new Shorts between 00:00‑06:00 UTC and keep titles under 45 seconds duration. Why: The lift for posting between 00‑06 UTC is 1.21 and videos lasting 21‑45 s have a lift of 1.11, indicating both timing and moderate length boost performance. Winners are often posted in these windows and are not ultra‑short (<20 s). Test: Schedule 15 Shorts to go live between 00:00‑06:00 UTC with durations of 25‑40 seconds, and 15 Shorts at other times or shorter durations. Measure view‑through rate and total views after 72 hours.
+
+My recent titles:
+- White to play: Magnus Carlsen found the discovered attack. Can you?
+- Magnus Carlsen faced this discovered attack in a one-minute game. Can you find it?
+- Win material — Magnus Carlsen found it in a one-minute game. Can you?
+- Even Magnus Carlsen missed this. Can you find it?
+- Find the best move — Magnus Carlsen found it in a one-minute game. Can you?
+- White to play against Magnus Carlsen. Can you see the free piece?
+- Magnus Carlsen spotted this skewer in a one-minute game. Your turn
+- Can you spot what Magnus Carlsen missed in a blitz game?
+- Black to play: Magnus Carlsen found the pin. Can you?
+- Win material — against Magnus Carlsen in a one-minute game. Can you?
+Best of them: Magnus Carlsen saw this in a one-minute game — can you? (1,545 views).
+
+Caveats: this is correlation from a small, noisy sample, and some listed Shorts may not be chess. Do not copy competitors' titles or content; borrow the structure only. My real metric is how long viewers stay, so check performance_history.json before trusting a views-only pattern.
+
+Read first: memory note chess_puzzle_automation.md
+
+Rules: £0 only. Never weaken or bypass the narration gate, the upload gate or the fact checks. Don't disturb running A/B tests - add new ideas as new experiments with their own control.
+
+This is the weekly radar read. The chess bot's nightly experiment loop already starts and judges tests by itself from levers.json, in the order the radar's stable patterns suggest, and it never runs more than one at a time. Read EXPERIMENTS.md, experiments.py and levers.json first: list what is running and what is queued, and leave them alone. Then propose up to 2 NEW levers worth adding to levers.json, only from the patterns that held up most of the week and that are not already queued. For each: the exact change, why the data supports it, and whether it should be judged on stay rate or views@72h. If nothing qualifies, say so. For the one you rate highest, implement it as an off-by-default lever: failing test first, a sample render (send_sample.yml with loop_values), push, and confirm the next real run is green.

@@ -1,0 +1,561 @@
+{
+ "generated": 1792758813,
+ "niche": "chess",
+ "n_videos": 1820,
+ "n_scored": 1229,
+ "n_channels": 76,
+ "breaking": [
+  {
+   "title": "1 million iq #chess",
+   "channel": "Neanderman",
+   "views": 615052,
+   "ratio": 11.9,
+   "age_h": 29,
+   "duration": 73,
+   "subs": 151000,
+   "url": "https://youtube.com/shorts/_QJDbyAmitM"
+  },
+  {
+   "title": "watch out oscar, eddy plays chess #shorts #checkmate #chesspuzzle",
+   "channel": "Duolingo Chess",
+   "views": 67403,
+   "ratio": 3.8,
+   "age_h": 21,
+   "duration": 26,
+   "subs": 63000,
+   "url": "https://youtube.com/shorts/xg3SL3U4fUw"
+  },
+  {
+   "title": "4 move checkmate trap!☠️#chess#checkmate#chessstap#chesscom#chesswin#chessgame",
+   "channel": "The chess wars",
+   "views": 7070,
+   "ratio": 2.7,
+   "age_h": 33,
+   "duration": 13,
+   "subs": 1110,
+   "url": "https://youtube.com/shorts/GqDmODydgZc"
+  },
+  {
+   "title": "BRILLIANT MOVE 💎💎💎#chess #chessgame #chesspuzzle#ajedrez #checkmate #magnuscarlsen#шахматы#shorts",
+   "channel": "Chesswithroshan.1",
+   "views": 48483,
+   "ratio": 2.1,
+   "age_h": 18,
+   "duration": 9,
+   "subs": 109000,
+   "url": "https://youtube.com/shorts/USi4Szs7GtA"
+  },
+  {
+   "title": "This rook play is almost impossible to see #chess #shorts #onlinechessworld",
+   "channel": "OnlineChessworld",
+   "views": 3984,
+   "ratio": 2.1,
+   "age_h": 29,
+   "duration": 7,
+   "subs": 7920,
+   "url": "https://youtube.com/shorts/lbkT7NCmOA4"
+  },
+  {
+   "title": "ROOK! Do you see why it works?🧐",
+   "channel": "Catur Talk Indonesia",
+   "views": 30043,
+   "ratio": 2.0,
+   "age_h": 35,
+   "duration": 8,
+   "subs": 493000,
+   "url": "https://youtube.com/shorts/hzq4hrsQhEA"
+  }
+ ],
+ "top_outliers": [
+  {
+   "title": "Genuinely in hell #chess #foryou #shorts #shortvideo",
+   "channel": "Full Strive",
+   "views": 40135,
+   "ratio": 203.2,
+   "age_h": 241,
+   "duration": 6,
+   "subs": 4150,
+   "url": "https://youtube.com/shorts/Si9IMkgPoCA"
+  },
+  {
+   "title": "The Fake Fruit Trick That Fooled Millions! 😱 #usa",
+   "channel": "Noble Deeds",
+   "views": 2626753,
+   "ratio": 37.7,
+   "age_h": 502,
+   "duration": 20,
+   "subs": 34000,
+   "url": "https://youtube.com/shorts/dt2qaMkziE4"
+  },
+  {
+   "title": "Watch cool trick #chess #foryou #shorts #shortvideo",
+   "channel": "Full Strive",
+   "views": 26227,
+   "ratio": 31.8,
+   "age_h": 289,
+   "duration": 7,
+   "subs": 4150,
+   "url": "https://youtube.com/shorts/KXItO4O3NDI"
+  },
+  {
+   "title": "Magnus Carlsen TROLLS Praggnanandhaa😂😂 #chess #chessshorts #magnuscarlsen #praggnanandhaa #funny",
+   "channel": "Convoy Chess",
+   "views": 1200812,
+   "ratio": 29.9,
+   "age_h": 246,
+   "duration": 25,
+   "subs": 894,
+   "url": "https://youtube.com/shorts/uaiHBfhE1EY"
+  },
+  {
+   "title": "Magnus Carlsen Reveals His Top 5 Ballon d'Or Picks",
+   "channel": "Chess Flash",
+   "views": 194654,
+   "ratio": 26.9,
+   "age_h": 52,
+   "duration": 11,
+   "subs": 50000,
+   "url": "https://youtube.com/shorts/hGccVw1rJew"
+  },
+  {
+   "title": "The Safest King in the World 😂😂",
+   "channel": "Catur Talk Indonesia",
+   "views": 208724,
+   "ratio": 24.8,
+   "age_h": 484,
+   "duration": 6,
+   "subs": 493000,
+   "url": "https://youtube.com/shorts/uhjf1MujA9Q"
+  },
+  {
+   "title": "Gotta delete now #chess #foryou #shorts #shortvideo",
+   "channel": "Full Strive",
+   "views": 37836,
+   "ratio": 23.6,
+   "age_h": 49,
+   "duration": 7,
+   "subs": 4160,
+   "url": "https://youtube.com/shorts/mcmr1KisP0s"
+  },
+  {
+   "title": "Can't remember #chess #foryou #shorts #shortvideo",
+   "channel": "Full Strive",
+   "views": 33655,
+   "ratio": 20.4,
+   "age_h": 409,
+   "duration": 7,
+   "subs": 4150,
+   "url": "https://youtube.com/shorts/OXKFBCYxw-0"
+  }
+ ],
+ "top_quartile_cut": 1.68,
+ "feature_lift": [
+  {
+   "feature": "long_title(>=12w)",
+   "lift": 1.37,
+   "share_top": 0.042,
+   "share_all": 0.031,
+   "n": 38,
+   "median_outlier": 1.09
+  },
+  {
+   "feature": "posted_00-06utc",
+   "lift": 1.21,
+   "share_top": 0.302,
+   "share_all": 0.249,
+   "n": 306,
+   "median_outlier": 1.1
+  },
+  {
+   "feature": "posted_06-12utc",
+   "lift": 1.12,
+   "share_top": 0.312,
+   "share_all": 0.278,
+   "n": 342,
+   "median_outlier": 1.02
+  },
+  {
+   "feature": "dur21-45s",
+   "lift": 1.11,
+   "share_top": 0.227,
+   "share_all": 0.205,
+   "n": 252,
+   "median_outlier": 1.01
+  },
+  {
+   "feature": "mate_in_n",
+   "lift": 1.1,
+   "share_top": 0.045,
+   "share_all": 0.041,
+   "n": 51,
+   "median_outlier": 0.89
+  },
+  {
+   "feature": "can_you",
+   "lift": 1.08,
+   "share_top": 0.075,
+   "share_all": 0.069,
+   "n": 85,
+   "median_outlier": 1.07
+  },
+  {
+   "feature": "number",
+   "lift": 1.08,
+   "share_top": 0.146,
+   "share_all": 0.135,
+   "n": 166,
+   "median_outlier": 0.99
+  },
+  {
+   "feature": "second_person",
+   "lift": 1.04,
+   "share_top": 0.133,
+   "share_all": 0.128,
+   "n": 157,
+   "median_outlier": 1.01
+  },
+  {
+   "feature": "famous_player",
+   "lift": 1.02,
+   "share_top": 0.185,
+   "share_all": 0.182,
+   "n": 224,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "hashtags_in_title",
+   "lift": 1.0,
+   "share_top": 0.773,
+   "share_all": 0.772,
+   "n": 949,
+   "median_outlier": 1.01
+  },
+  {
+   "feature": "dur<=20s",
+   "lift": 0.99,
+   "share_top": 0.724,
+   "share_all": 0.729,
+   "n": 896,
+   "median_outlier": 1.02
+  },
+  {
+   "feature": "question",
+   "lift": 0.99,
+   "share_top": 0.224,
+   "share_all": 0.225,
+   "n": 277,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "short_title(<=6w)",
+   "lift": 0.97,
+   "share_top": 0.627,
+   "share_all": 0.644,
+   "n": 792,
+   "median_outlier": 1.01
+  },
+  {
+   "feature": "emoji",
+   "lift": 0.95,
+   "share_top": 0.484,
+   "share_all": 0.508,
+   "n": 624,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "posted_18-24utc",
+   "lift": 0.92,
+   "share_top": 0.065,
+   "share_all": 0.071,
+   "n": 87,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "brilliant/blunder",
+   "lift": 0.91,
+   "share_top": 0.347,
+   "share_all": 0.38,
+   "n": 467,
+   "median_outlier": 1.02
+  },
+  {
+   "feature": "caps_word",
+   "lift": 0.87,
+   "share_top": 0.221,
+   "share_all": 0.254,
+   "n": 312,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "dur>90s",
+   "lift": 0.85,
+   "share_top": 0.023,
+   "share_all": 0.027,
+   "n": 33,
+   "median_outlier": 1.02
+  },
+  {
+   "feature": "posted_12-18utc",
+   "lift": 0.8,
+   "share_top": 0.321,
+   "share_all": 0.402,
+   "n": 494,
+   "median_outlier": 0.99
+  },
+  {
+   "feature": "first_person",
+   "lift": 0.73,
+   "share_top": 0.019,
+   "share_all": 0.027,
+   "n": 33,
+   "median_outlier": 0.96
+  },
+  {
+   "feature": "dur46-90s",
+   "lift": 0.67,
+   "share_top": 0.026,
+   "share_all": 0.039,
+   "n": 48,
+   "median_outlier": 0.71
+  }
+ ],
+ "winning_words": [
+  {
+   "word": "reverse",
+   "lift": 2.67,
+   "in_winners": 4
+  },
+  {
+   "word": "won",
+   "lift": 2.5,
+   "in_winners": 10
+  },
+  {
+   "word": "carlsen",
+   "lift": 2.11,
+   "in_winners": 10
+  },
+  {
+   "word": "fork",
+   "lift": 2.0,
+   "in_winners": 6
+  },
+  {
+   "word": "elo",
+   "lift": 2.0,
+   "in_winners": 6
+  },
+  {
+   "word": "get",
+   "lift": 1.78,
+   "in_winners": 4
+  },
+  {
+   "word": "wins",
+   "lift": 1.63,
+   "in_winners": 11
+  },
+  {
+   "word": "sac",
+   "lift": 1.6,
+   "in_winners": 20
+  },
+  {
+   "word": "did",
+   "lift": 1.6,
+   "in_winners": 8
+  },
+  {
+   "word": "championship",
+   "lift": 1.6,
+   "in_winners": 4
+  },
+  {
+   "word": "magnus",
+   "lift": 1.57,
+   "in_winners": 11
+  },
+  {
+   "word": "bishop",
+   "lift": 1.5,
+   "in_winners": 15
+  }
+ ],
+ "duration_bands": {
+  "≤20s": {
+   "n": 896,
+   "median_outlier": 1.02
+  },
+  "21-45s": {
+   "n": 252,
+   "median_outlier": 1.01
+  },
+  "46-90s": {
+   "n": 48,
+   "median_outlier": 0.71
+  },
+  ">90s": {
+   "n": 33,
+   "median_outlier": 1.02
+  }
+ },
+ "you": {
+  "videos": 24,
+  "median_views": 964.5,
+  "median_v24": 784,
+  "niche_small_channels_median_v24": 5686.0,
+  "niche_small_channels_n": 920,
+  "best": {
+   "title": "Magnus Carlsen saw this in a one-minute game — can you?",
+   "channel": "Candidate Moves · Chess Puzzles",
+   "views": 1545,
+   "ratio": null,
+   "age_h": 190,
+   "duration": 21,
+   "subs": 38,
+   "url": "https://youtube.com/shorts/51cK_akYbIg"
+  },
+  "titles": [
+   "White to play: Magnus Carlsen found the discovered attack. Can you?",
+   "Magnus Carlsen faced this discovered attack in a one-minute game. Can you find it?",
+   "Win material — Magnus Carlsen found it in a one-minute game. Can you?",
+   "Even Magnus Carlsen missed this. Can you find it?",
+   "Find the best move — Magnus Carlsen found it in a one-minute game. Can you?",
+   "White to play against Magnus Carlsen. Can you see the free piece?",
+   "Magnus Carlsen spotted this skewer in a one-minute game. Your turn",
+   "Can you spot what Magnus Carlsen missed in a blitz game?",
+   "Black to play: Magnus Carlsen found the pin. Can you?",
+   "Win material — against Magnus Carlsen in a one-minute game. Can you?"
+  ],
+  "durations": [
+   17,
+   21,
+   17,
+   19,
+   17,
+   19,
+   18,
+   20,
+   17,
+   19
+  ]
+ },
+ "winner_median_duration": 11,
+ "gaps": [],
+ "hypotheses": [
+  {
+   "change": "Add a short, punchy hook at the start of the title using emojis and a surprising claim, then include a relevant hashtag block at the end",
+   "why": "Winners often begin with eye‑catching phrases or emojis (e.g., \"Genuinely in hell #chess #foryou #shorts #shortvideo\" and \"Magnus Carlsen TROLLS Praggnanandhaa😂😂 #chess #chessshorts #magnuscarlsen #praggnanandhaa #funny\") and they consistently use hashtag clusters, which correlates with higher lift",
+   "evidence": [
+    "Genuinely in hell #chess #foryou #shorts #shortvideo",
+    "Magnus Carlsen TROLLS Praggnanandhaa😂😂 #chess #chessshorts #magnuscarlsen #praggnanandhaa #funny"
+   ],
+   "how_to_test": "Create two variants of the next 10 Shorts: one with the new hook+emoji+hashtag format and one keeping the current title style. Track view‑through rate and average views per Short over a 7‑day period."
+  },
+  {
+   "change": "Include a numeric element (e.g., \"1 million iq\", \"4 move checkmate trap\") in every title",
+   "why": "The feature lift shows \"number\" has a lift of 1.08, and winners frequently contain numbers (\"1 million iq #chess\" and \"4 move checkmate trap!☠️#chess#checkmate#chessstap#chesscom#chesswin#chessgame\")",
+   "evidence": [
+    "1 million iq #chess",
+    "4 move checkmate trap!☠️#chess#checkmate#chessstap#chesscom#chesswin#chessgame"
+   ],
+   "how_to_test": "Produce 10 Shorts with a clear numeric hook (e.g., \"3‑move mate\", \"5‑second puzzle\") and 10 Shorts without numbers. Compare the average view count and engagement (likes, comments) after 48 hours."
+  },
+  {
+   "change": "Post new Shorts between 00:00‑06:00 UTC and keep titles under 45 seconds duration",
+   "why": "The lift for posting between 00‑06 UTC is 1.21 and videos lasting 21‑45 s have a lift of 1.11, indicating both timing and moderate length boost performance. Winners are often posted in these windows and are not ultra‑short (<20 s).",
+   "evidence": [
+    "Gotta delete now #chess #foryou #shorts #shortvideo",
+    "4 move checkmate trap!☠️#chess#checkmate#chessstap#chesscom#chesswin#chessgame"
+   ],
+   "how_to_test": "Schedule 15 Shorts to go live between 00:00‑06:00 UTC with durations of 25‑40 seconds, and 15 Shorts at other times or shorter durations. Measure view‑through rate and total views after 72 hours."
+  }
+ ],
+ "stability": {
+  "can_you": {
+   "days_above": 3,
+   "days_seen": 7
+  },
+  "mate_in_n": {
+   "days_above": 7,
+   "days_seen": 7
+  },
+  "second_person": {
+   "days_above": 5,
+   "days_seen": 7
+  },
+  "long_title(>=12w)": {
+   "days_above": 7,
+   "days_seen": 7
+  },
+  "famous_player": {
+   "days_above": 6,
+   "days_seen": 7
+  },
+  "posted_06-12utc": {
+   "days_above": 7,
+   "days_seen": 7
+  },
+  "posted_18-24utc": {
+   "days_above": 4,
+   "days_seen": 7
+  },
+  "number": {
+   "days_above": 4,
+   "days_seen": 7
+  },
+  "dur21-45s": {
+   "days_above": 6,
+   "days_seen": 7
+  },
+  "question": {
+   "days_above": 1,
+   "days_seen": 7
+  },
+  "posted_00-06utc": {
+   "days_above": 4,
+   "days_seen": 7
+  },
+  "hashtags_in_title": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "dur<=20s": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "short_title(<=6w)": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "emoji": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "brilliant/blunder": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "dur46-90s": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "caps_word": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "posted_12-18utc": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "dur>90s": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "first_person": {
+   "days_above": 0,
+   "days_seen": 7
+  }
+ },
+ "claude_prompt": "Improve my chess Shorts channel (@CandidateMoves). Repo: @@REPO@@ (GitHub: chess-puzzle-automation).\n\nEvidence from my Shorts Radar on 2026-10-23: 76 competitor channels, 1820 Shorts tracked, 1229 old enough to score. Outlier score = a Short's views divided by that channel's normal Short.\n\nWhere I am: my last 24 Shorts median 784 views at 24h; small competitors (<50k subs, n=920) median 5,686.\n\nWarning: Magnus Carlsen is in 9 of 10 of my recent titles. The channel may be running one formula; check whether it is wearing out.\n\nLength: my Shorts run a median 18s; the winning Shorts run a median 11s.\n\nWhat over-indexes among the top quarter of competitor Shorts (share in winners vs share overall):\n- long_title(>=12w): 1.37x (4% vs 3%, n=38) [7 of 7 days]\n- posted_00-06utc: 1.21x (30% vs 25%, n=306) [4 of 7 days]\n- posted_06-12utc: 1.12x (31% vs 28%, n=342) [7 of 7 days]\n- dur21-45s: 1.11x (23% vs 20%, n=252) [6 of 7 days]\n- mate_in_n: 1.1x (4% vs 4%, n=51) [7 of 7 days]\n\nHeld up most of the week (over-indexed on most of the last 7 daily reports):\n- long_title(>=12w): 7 of 7 days at 1.1x or more\n- posted_06-12utc: 7 of 7 days at 1.1x or more\n- dur21-45s: 6 of 7 days at 1.1x or more\n- mate_in_n: 7 of 7 days at 1.1x or more\n\nWords over-represented in winning titles: reverse (2.67x), won (2.5x), carlsen (2.11x), fork (2.0x), elo (2.0x), get (1.78x), wins (1.63x), sac (1.6x), did (1.6x), championship (1.6x).\n\nBreaking now (under 36h old and already beating their channel):\n- \"1 million iq #chess\" · 11.9x its channel's normal · 615,052 views in 29h · 73s · https://youtube.com/shorts/_QJDbyAmitM\n- \"watch out oscar, eddy plays chess #shorts #checkmate #chesspuzzle\" · 3.8x its channel's normal · 67,403 views in 21h · 26s · https://youtube.com/shorts/xg3SL3U4fUw\n- \"4 move checkmate trap!☠️#chess#checkmate#chessstap#chesscom#chesswin#chessgame\" · 2.7x its channel's normal · 7,070 views in 33h · 13s · https://youtube.com/shorts/GqDmODydgZc\n- \"BRILLIANT MOVE 💎💎💎#chess #chessgame #chesspuzzle#ajedrez #checkmate #magnuscarlsen#шахматы#shorts\" · 2.1x its channel's normal · 48,483 views in 18h · 9s · https://youtube.com/shorts/USi4Szs7GtA\n- \"This rook play is almost impossible to see #chess #shorts #onlinechessworld\" · 2.1x its channel's normal · 3,984 views in 29h · 7s · https://youtube.com/shorts/lbkT7NCmOA4\n- \"ROOK! Do you see why it works?🧐\" · 2.0x its channel's normal · 30,043 views in 35h · 8s · https://youtube.com/shorts/hzq4hrsQhEA\n\nBiggest recent outliers:\n- \"Genuinely in hell #chess #foryou #shorts #shortvideo\" · 203.2x its channel's normal · 40,135 views · 6s · https://youtube.com/shorts/Si9IMkgPoCA\n- \"The Fake Fruit Trick That Fooled Millions! 😱 #usa\" · 37.7x its channel's normal · 2,626,753 views · 20s · https://youtube.com/shorts/dt2qaMkziE4\n- \"Watch cool trick #chess #foryou #shorts #shortvideo\" · 31.8x its channel's normal · 26,227 views · 7s · https://youtube.com/shorts/KXItO4O3NDI\n- \"Magnus Carlsen TROLLS Praggnanandhaa😂😂 #chess #chessshorts #magnuscarlsen #praggnanandhaa #funny\" · 29.9x its channel's normal · 1,200,812 views · 25s · https://youtube.com/shorts/uaiHBfhE1EY\n- \"Magnus Carlsen Reveals His Top 5 Ballon d'Or Picks\" · 26.9x its channel's normal · 194,654 views · 11s · https://youtube.com/shorts/hGccVw1rJew\n- \"The Safest King in the World 😂😂\" · 24.8x its channel's normal · 208,724 views · 6s · https://youtube.com/shorts/uhjf1MujA9Q\n\nThe radar's own proposals (unverified; weigh them yourself):\n- Add a short, punchy hook at the start of the title using emojis and a surprising claim, then include a relevant hashtag block at the end. Why: Winners often begin with eye‑catching phrases or emojis (e.g., \"Genuinely in hell #chess #foryou #shorts #shortvideo\" and \"Magnus Carlsen TROLLS Praggnanandhaa😂😂 #chess #chessshorts #magnuscarlsen #praggnanandhaa #funny\") and they consistently use hashtag clusters, which correlates with higher lift Test: Create two variants of the next 10 Shorts: one with the new hook+emoji+hashtag format and one keeping the current title style. Track view‑through rate and average views per Short over a 7‑day period.\n- Include a numeric element (e.g., \"1 million iq\", \"4 move checkmate trap\") in every title. Why: The feature lift shows \"number\" has a lift of 1.08, and winners frequently contain numbers (\"1 million iq #chess\" and \"4 move checkmate trap!☠️#chess#checkmate#chessstap#chesscom#chesswin#chessgame\") Test: Produce 10 Shorts with a clear numeric hook (e.g., \"3‑move mate\", \"5‑second puzzle\") and 10 Shorts without numbers. Compare the average view count and engagement (likes, comments) after 48 hours.\n- Post new Shorts between 00:00‑06:00 UTC and keep titles under 45 seconds duration. Why: The lift for posting between 00‑06 UTC is 1.21 and videos lasting 21‑45 s have a lift of 1.11, indicating both timing and moderate length boost performance. Winners are often posted in these windows and are not ultra‑short (<20 s). Test: Schedule 15 Shorts to go live between 00:00‑06:00 UTC with durations of 25‑40 seconds, and 15 Shorts at other times or shorter durations. Measure view‑through rate and total views after 72 hours.\n\nMy recent titles:\n- White to play: Magnus Carlsen found the discovered attack. Can you?\n- Magnus Carlsen faced this discovered attack in a one-minute game. Can you find it?\n- Win material — Magnus Carlsen found it in a one-minute game. Can you?\n- Even Magnus Carlsen missed this. Can you find it?\n- Find the best move — Magnus Carlsen found it in a one-minute game. Can you?\n- White to play against Magnus Carlsen. Can you see the free piece?\n- Magnus Carlsen spotted this skewer in a one-minute game. Your turn\n- Can you spot what Magnus Carlsen missed in a blitz game?\n- Black to play: Magnus Carlsen found the pin. Can you?\n- Win material — against Magnus Carlsen in a one-minute game. Can you?\nBest of them: Magnus Carlsen saw this in a one-minute game — can you? (1,545 views).\n\nCaveats: this is correlation from a small, noisy sample, and some listed Shorts may not be chess. Do not copy competitors' titles or content; borrow the structure only. My real metric is how long viewers stay, so check performance_history.json before trusting a views-only pattern.\n\nRead first: memory note chess_puzzle_automation.md\n\nRules: £0 only. Never weaken or bypass the narration gate, the upload gate or the fact checks. Don't disturb running A/B tests - add new ideas as new experiments with their own control.\n\nThis is the weekly radar read. The chess bot's nightly experiment loop already starts and judges tests by itself from levers.json, in the order the radar's stable patterns suggest, and it never runs more than one at a time. Read EXPERIMENTS.md, experiments.py and levers.json first: list what is running and what is queued, and leave them alone. Then propose up to 2 NEW levers worth adding to levers.json, only from the patterns that held up most of the week and that are not already queued. For each: the exact change, why the data supports it, and whether it should be judged on stay rate or views@72h. If nothing qualifies, say so. For the one you rate highest, implement it as an off-by-default lever: failing test first, a sample render (send_sample.yml with loop_values), push, and confirm the next real run is green."
+}
