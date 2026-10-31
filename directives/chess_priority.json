@@ -1,0 +1,13 @@
+{
+ "generated": "2026-10-31T13:32:19Z",
+ "levers": [
+  "title_mate_tag"
+ ],
+ "evidence": {
+  "title_mate_tag": {
+   "feature": "mate_in_n",
+   "days_above": 6,
+   "days_seen": 7
+  }
+ }
+}

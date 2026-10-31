@@ -1,0 +1,66 @@
+Improve my chess Shorts channel (@CandidateMoves). Repo: @@REPO@@ (GitHub: chess-puzzle-automation).
+
+Evidence from my Shorts Radar on 2026-10-31: 56 competitor channels, 1708 Shorts tracked, 1027 old enough to score. Outlier score = a Short's views divided by that channel's normal Short.
+
+Where I am: my last 24 Shorts median 552 views at 24h; small competitors (<50k subs, n=932) median 7,173.
+
+Length: my Shorts run a median 19s; the winning Shorts run a median 12s.
+
+What over-indexes among the top quarter of competitor Shorts (share in winners vs share overall):
+- dur>90s: 1.52x (4% vs 3%, n=29) [6 of 7 days]
+- mate_in_n: 1.21x (7% vs 6%, n=56) [6 of 7 days]
+- posted_00-06utc: 1.16x (24% vs 21%, n=214) [7 of 7 days]
+- number: 1.13x (19% vs 17%, n=170) [7 of 7 days]
+- posted_06-12utc: 1.12x (35% vs 31%, n=321) [2 of 7 days]
+
+Held up most of the week (over-indexed on most of the last 7 daily reports):
+- dur>90s: 6 of 7 days at 1.1x or more
+- mate_in_n: 6 of 7 days at 1.1x or more
+- posted_00-06utc: 7 of 7 days at 1.1x or more
+- number: 7 of 7 days at 1.1x or more
+
+Words over-represented in winning titles: farming (4.0x), watch (4.0x), aura (3.43x), solve (3.2x), magnus (2.0x), carlsen (2.0x), promotion (1.78x), wins (1.68x), rooks (1.45x), funny (1.45x).
+
+Winning traits my recent titles rarely use: dur>90s (winners 4%, me 0%).
+
+Breaking now (under 36h old and already beating their channel):
+- "21 Queens & 7 Pawns & 1 Rook vs 2 Pawns – Who Wins? #chess" · 5.0x its channel's normal · 310,434 views in 25h · 20s · https://youtube.com/shorts/ZbzdKcJcUsQ
+- "Proud of my fork #chess #foryou #shorts #shortvideo" · 4.2x its channel's normal · 29,027 views in 22h · 8s · https://youtube.com/shorts/Szlky77zMPI
+- "Killer pawn in latvian gambit" · 3.4x its channel's normal · 71,686 views in 31h · 59s · https://youtube.com/shorts/dtA_AB8Y9FU
+- "The Queen 🔥🤯#chess #chessgame #chesspuzzle#ajedrez #checkmate #magnuscarlsen#шахматы#shorts" · 2.9x its channel's normal · 56,935 views in 25h · 12s · https://youtube.com/shorts/AQOF0LefeKg
+- "Brilliant Rook Sacrifice #chess #tamil #chessgame #chesspuzzle" · 2.7x its channel's normal · 129,758 views in 22h · 9s · https://youtube.com/shorts/h4Y5HLtA52A
+- "Worst Thing In Chess😭 #chess #chessgame #chessmemes" · 2.5x its channel's normal · 169,164 views in 23h · 20s · https://youtube.com/shorts/teMjlB6qpQ0
+
+Biggest recent outliers:
+- "Genuinely in hell #chess #foryou #shorts #shortvideo" · 203.2x its channel's normal · 40,135 views · 6s · https://youtube.com/shorts/Si9IMkgPoCA
+- "oscar’s shaking in his boots #chess  #shorts  #checkmate #chesspuzzle" · 54.3x its channel's normal · 1,525,599 views · 22s · https://youtube.com/shorts/EIyU10jVkec
+- "predator chess #chess" · 46.8x its channel's normal · 2,171,776 views · 96s · https://youtube.com/shorts/pXmmXOcvaGA
+- "1 million iq #chess" · 44.5x its channel's normal · 1,988,637 views · 73s · https://youtube.com/shorts/_QJDbyAmitM
+- "💎 LEVY'S ROOOOOOK SACRIFICE! 🔥 | Brilliant Chess Move #shorts #chess #viral" · 38.5x its channel's normal · 155,729 views · 9s · https://youtube.com/shorts/uDf9qIBI1N4
+- "Watch cool trick #chess #foryou #shorts #shortvideo" · 31.8x its channel's normal · 26,227 views · 7s · https://youtube.com/shorts/KXItO4O3NDI
+
+The radar's own proposals (unverified; weigh them yourself):
+- Add high‑energy emojis and caps to the title (e.g., 🔥, 💎, 😂) and include a short, punchy hook phrase.. Why: Winner titles that include emojis and strong emotional words (e.g., "💎 LEVY'S ROOOOOOK SACRIFICE! 🔥", "Magnus Carlsen TROLLS Praggnanandhaa😂😂", "Worst Thing In Chess😭") consistently outperform the channel’s more formal titles. Test: Create 6 new Shorts: 3 with emoji‑rich, caps‑heavy titles as described, and 3 control videos keeping the original title style. Publish them at similar times and measure view‑through rate and total views over 48 hours. Compare average lift; a statistically significant higher lift for the emoji version supports the hypothesis.
+- Insert a clear, curiosity‑driven question using the phrase "Can you" followed by a specific tactical hook (e.g., "Can you spot the killer pawn?"), and keep the title under 6 words.. Why: The "can_you" feature shows a lift of 1.05, and many winner titles use direct questions or challenges (e.g., "Proud of my fork", "Killer pawn in latvian gambit"). Short, question‑based titles also align with the short_title lift (1.02). Test: Produce 8 Shorts: 4 with titles like "Can you spot the killer pawn?" (≤6 words) and 4 with the current longer question format. Release them in matched time slots. Track average view count and engagement (likes, comments) for each group over 72 hours. A higher average for the concise "Can you" titles validates the change.
+- Add a trending hashtag block at the end of the title (e.g., #shorts #shortvideo #foryou) and ensure the total number of hashtags is at least 3.. Why: The "hashtags_in_title" feature yields a lift of 1.05, and winner titles consistently end with multiple hashtags, boosting discoverability. Test: Create 10 new Shorts: 5 with titles that include at least three relevant hashtags at the end, and 5 without any hashtags. Publish them over the same days and times. Compare view counts, watch time, and click‑through rates after 24 hours. A measurable lift for the hashtag group confirms the hypothesis.
+
+My recent titles:
+- White to play against Peter Svidler. Can you see the mate in 2?
+- Win material — a grandmaster found it in a three-minute game. Can you?
+- This was played against Fabiano Caruana. Can you find it?
+- A grandmaster found this in a three-minute game. Can you?
+- Even a grandmaster missed this. Can you find it?
+- White to play: Grandmaster David Paravyan found the sacrifice. Can you?
+- Find the best move — a grandmaster found it in a three-minute game. Can you?
+- A grandmaster didn't see this pin. Will you?
+- Nihal Sarin saw this in a three-minute game — can you?
+- Can you spot what Grandmaster Lars Oskar Hauge missed in a 30-second game?
+Best of them: Can you find the move Magnus Carlsen played? (1,468 views).
+
+Caveats: this is correlation from a small, noisy sample, and some listed Shorts may not be chess. Do not copy competitors' titles or content; borrow the structure only. My real metric is how long viewers stay, so check performance_history.json before trusting a views-only pattern.
+
+Read first: memory note chess_puzzle_automation.md
+
+Rules: £0 only. Never weaken or bypass the narration gate, the upload gate or the fact checks. Don't disturb running A/B tests - add new ideas as new experiments with their own control.
+
+This is the weekly radar read. The chess bot's nightly experiment loop already starts and judges tests by itself from levers.json, in the order the radar's stable patterns suggest, and it never runs more than one at a time. Read EXPERIMENTS.md, experiments.py and levers.json first: list what is running and what is queued, and leave them alone. Then propose up to 2 NEW levers worth adding to levers.json, only from the patterns that held up most of the week and that are not already queued. For each: the exact change, why the data supports it, and whether it should be judged on stay rate or views@72h. If nothing qualifies, say so. For the one you rate highest, implement it as an off-by-default lever: failing test first, a sample render (send_sample.yml with loop_values), push, and confirm the next real run is green.
