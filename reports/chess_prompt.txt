@@ -1,0 +1,63 @@
+Improve my chess Shorts channel (@CandidateMoves). Repo: @@REPO@@ (GitHub: chess-puzzle-automation).
+
+Evidence from my Shorts Radar on 2026-11-07: 51 competitor channels, 1823 Shorts tracked, 1065 old enough to score. Outlier score = a Short's views divided by that channel's normal Short.
+
+Where I am: my last 20 Shorts median 621 views at 24h; small competitors (<50k subs, n=1018) median 8,193.
+
+Length: my Shorts run a median 20s; the winning Shorts run a median 11s.
+
+What over-indexes among the top quarter of competitor Shorts (share in winners vs share overall):
+- dur>90s: 1.42x (4% vs 3%, n=31) [7 of 7 days]
+- dur46-90s: 1.21x (9% vs 7%, n=79) [4 of 7 days]
+- brilliant/blunder: 1.12x (40% vs 35%, n=377) [2 of 7 days]
+- posted_06-12utc: 1.11x (35% vs 32%, n=337) [2 of 7 days]
+- can_you: 1.1x (7% vs 6%, n=69) [5 of 7 days]
+
+Held up most of the week (over-indexed on most of the last 7 daily reports):
+- dur>90s: 7 of 7 days at 1.1x or more
+- can_you: 5 of 7 days at 1.1x or more
+
+Words over-represented in winning titles: stalemate (3.97x), 1800 (3.18x), aura (2.27x), funny (1.99x), queens (1.83x), right (1.77x), it's (1.77x), promotion (1.77x), chessbloop (1.59x), pawns (1.53x).
+
+Winning traits my recent titles rarely use: dur>90s (winners 4%, me 0%); dur46-90s (winners 9%, me 0%).
+
+Breaking now (under 36h old and already beating their channel):
+- "5 Diddy vs 1 Chris Hansen #chess" · 13.1x its channel's normal · 654,971 views in 26h · 128s · https://youtube.com/shorts/ThWhvkpT3y4
+- "Why.. Brilliant - Can You Explain 🤔‼️ #chess #rook #puzzle #gaming" · 12.4x its channel's normal · 26,191 views in 32h · 10s · https://youtube.com/shorts/JxdmkM9q5Hc
+- "Brilliant ‼️ or Blunder❓#chess #chessgame#chesspuzzle#ajedrez#checkmate#magnuscarlsen#шахматы#shorts" · 9.4x its channel's normal · 282,062 views in 31h · 11s · https://youtube.com/shorts/RiGavWgkOfU
+- "Can you solve this Mate in 2?🤔 #chess" · 5.4x its channel's normal · 180,434 views in 30h · 10s · https://youtube.com/shorts/f_T604VOWI4
+- "Blunder Brilliant ‼️✨💭 #chess #rook #puzzle #siciliandefense #gaming" · 4.0x its channel's normal · 8,542 views in 19h · 8s · https://youtube.com/shorts/VpCMoOHxHQA
+- "Wait For The Last Move ‼️💎 #chess #chess #rook #shorts" · 3.6x its channel's normal · 7,546 views in 32h · 20s · https://youtube.com/shorts/ca12VED9pVU
+
+Biggest recent outliers:
+- "💎 LEVY'S ROOOOOOK SACRIFICE! 🔥 | Brilliant Chess Move #shorts #chess #viral" · 136.7x its channel's normal · 970,198 views · 9s · https://youtube.com/shorts/uDf9qIBI1N4
+- "predator chess #chess" · 60.5x its channel's normal · 3,009,087 views · 96s · https://youtube.com/shorts/pXmmXOcvaGA
+- "1 million iq #chess" · 44.5x its channel's normal · 1,988,637 views · 73s · https://youtube.com/shorts/_QJDbyAmitM
+- "oscar’s shaking in his boots #chess  #shorts  #checkmate #chesspuzzle" · 38.9x its channel's normal · 1,854,775 views · 22s · https://youtube.com/shorts/EIyU10jVkec
+- "Queen & Rook Aura farming 🗿‼️#chessgame #chesscom #chessplayer #chesstactics #chessmaster #trap" · 29.2x its channel's normal · 1,466,371 views · 15s · https://youtube.com/shorts/j9sjLwkyf8s
+- "What you call this? #trendingshorts #chesspuzzle #chesstactics #viralvideo" · 25.6x its channel's normal · 720,288 views · 23s · https://youtube.com/shorts/DhjVCFWr3wI
+
+The radar's own proposals (unverified; weigh them yourself):
+- Add a direct question prompt to the title and keep it under 6 words.. Why: Titles with a question and short length (≤6 words) have a lift of 1.01 and 1.07 respectively, indicating higher share among top performers. Test: Create two variants of an upcoming short: one titled "Can you solve this Mate in 2?" (question, ≤6 words) and another with a neutral title of similar length. Publish both at the same posting time slot for a week and compare view‑through rates and total views.
+- Include high‑impact emojis and a “💎” or “‼️” symbol at the start of the title.. Why: Winner titles that begin with emojis like 💎 or contain ‼️ consistently appear in high‑performing shorts, suggesting visual hooks boost click‑through. Test: Produce three shorts with identical content; title one with a leading "💎" emoji, title two with a leading "‼️" emoji, and title three with no emoji. Release them in the same time window over three consecutive days and measure the relative view counts and audience retention.
+
+My recent titles:
+- Grandmaster Gawain Jones spotted this pin in a five-minute game. Your turn
+- Grandmaster David Navara spotted this fork in a ten-minute game. Your turn
+- Win material — even a grandmaster missed it. Can you?
+- Grandmaster Valentin Baidetskyi found this in a three-minute game. Can you?
+- Win material — Andrew Tang found it in a 30-second game. Can you?
+- Magnus Carlsen didn't see this clearance. Will you?
+- Win material — Grandmaster Leonardo Tristan found it in a three-minute game. Can you?
+- Nihal Sarin spotted this mate in 2 in a one-minute game. Your turn
+- White to play. A grandmaster missed the mate in 3 here
+- Peter Svidler spotted this mate in 2 in a three-minute game. Your turn
+Best of them: White to play: a grandmaster found the deflection. Can you? (1,625 views).
+
+Caveats: this is correlation from a small, noisy sample, and some listed Shorts may not be chess. Do not copy competitors' titles or content; borrow the structure only. My real metric is how long viewers stay, so check performance_history.json before trusting a views-only pattern.
+
+Read first: memory note chess_puzzle_automation.md
+
+Rules: £0 only. Never weaken or bypass the narration gate, the upload gate or the fact checks. Don't disturb running A/B tests - add new ideas as new experiments with their own control.
+
+This is the weekly radar read. The chess bot's nightly experiment loop already starts and judges tests by itself from levers.json, in the order the radar's stable patterns suggest, and it never runs more than one at a time. Read EXPERIMENTS.md, experiments.py and levers.json first: list what is running and what is queued, and leave them alone. Then propose up to 2 NEW levers worth adding to levers.json, only from the patterns that held up most of the week and that are not already queued. For each: the exact change, why the data supports it, and whether it should be judged on stay rate or views@72h. If nothing qualifies, say so. For the one you rate highest, implement it as an off-by-default lever: failing test first, a sample render (send_sample.yml with loop_values), push, and confirm the next real run is green.
