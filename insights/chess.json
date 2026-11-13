@@ -1,0 +1,562 @@
+{
+ "generated": 1794583038,
+ "niche": "chess",
+ "n_videos": 1893,
+ "n_scored": 1207,
+ "n_channels": 56,
+ "breaking": [
+  {
+   "title": "💎 MATE IN 2 WITH LEVY ROZMAN! #chess #shorts #gothamchess",
+   "channel": "SMART AVANI",
+   "views": 179028,
+   "ratio": 6.4,
+   "age_h": 29,
+   "duration": 10,
+   "subs": 3890,
+   "url": "https://youtube.com/shorts/AiAJY8fr7GY"
+  },
+  {
+   "title": "I know rules too #chess #foryoi #shorts #shortvideo",
+   "channel": "Full Strive",
+   "views": 44600,
+   "ratio": 4.4,
+   "age_h": 22,
+   "duration": 8,
+   "subs": 4320,
+   "url": "https://youtube.com/shorts/P95zYBx5ixw"
+  },
+  {
+   "title": "Sacrifices are everywhere. #chess #chesspuzzle #chesslessons",
+   "channel": "michechess",
+   "views": 31997,
+   "ratio": 3.0,
+   "age_h": 28,
+   "duration": 16,
+   "subs": 7420,
+   "url": "https://youtube.com/shorts/oMiesO8N0B8"
+  },
+  {
+   "title": "WHITE SACRIFICES EVERYTHING! 😱 PAWN DELIVERS BRILLIANT CHECKMATE! ♟️🔥 #ChessShorts",
+   "channel": "Chess With Narottam",
+   "views": 81916,
+   "ratio": 2.4,
+   "age_h": 27,
+   "duration": 31,
+   "subs": 816,
+   "url": "https://youtube.com/shorts/HpUD1_3-QuM"
+  },
+  {
+   "title": "bạn có nghĩ tới nước đi này? Did You Think of This Move? #chess #covualogic",
+   "channel": "Cờ Vua Logic",
+   "views": 230693,
+   "ratio": 2.3,
+   "age_h": 35,
+   "duration": 11,
+   "subs": 68700,
+   "url": "https://youtube.com/shorts/JZWbu-S6voI"
+  },
+  {
+   "title": "Can you find it?😎 #chesspuzzle",
+   "channel": "Catur Talk Indonesia",
+   "views": 50414,
+   "ratio": 2.1,
+   "age_h": 31,
+   "duration": 10,
+   "subs": 493000,
+   "url": "https://youtube.com/shorts/oHFNAtHA7lg"
+  }
+ ],
+ "top_outliers": [
+  {
+   "title": "👑GambitKings.com👑",
+   "channel": "GambitKings",
+   "views": 2569835,
+   "ratio": 389.4,
+   "age_h": 279,
+   "duration": 16,
+   "subs": 3350,
+   "url": "https://youtube.com/shorts/ivsftZudlec"
+  },
+  {
+   "title": "👑GambitKings.com👑",
+   "channel": "GambitKings",
+   "views": 1250214,
+   "ratio": 189.4,
+   "age_h": 255,
+   "duration": 22,
+   "subs": 3400,
+   "url": "https://youtube.com/shorts/ATOC-UbAQIM"
+  },
+  {
+   "title": "💎 LEVY'S ROOOOOOK SACRIFICE! 🔥 | Brilliant Chess Move #shorts #chess #viral",
+   "channel": "SMART AVANI",
+   "views": 970198,
+   "ratio": 136.7,
+   "age_h": 365,
+   "duration": 9,
+   "subs": 3770,
+   "url": "https://youtube.com/shorts/uDf9qIBI1N4"
+  },
+  {
+   "title": "predator chess #chess",
+   "channel": "Neanderman",
+   "views": 3009087,
+   "ratio": 60.5,
+   "age_h": 363,
+   "duration": 96,
+   "subs": 159000,
+   "url": "https://youtube.com/shorts/pXmmXOcvaGA"
+  },
+  {
+   "title": "oscar’s shaking in his boots #chess  #shorts  #checkmate #chesspuzzle",
+   "channel": "Duolingo Chess",
+   "views": 1854775,
+   "ratio": 38.9,
+   "age_h": 430,
+   "duration": 22,
+   "subs": 75100,
+   "url": "https://youtube.com/shorts/EIyU10jVkec"
+  },
+  {
+   "title": "Black vs White ♟️ Who’s winning this one? 👀🔥",
+   "channel": "LogicChess",
+   "views": 1042816,
+   "ratio": 34.7,
+   "age_h": 101,
+   "duration": 38,
+   "subs": 1370,
+   "url": "https://youtube.com/shorts/EcqRyWN6sFo"
+  },
+  {
+   "title": "Queen & Rook Aura farming 🗿‼️#chessgame #chesscom #chessplayer #chesstactics #chessmaster #trap",
+   "channel": "Chesswithrajdeep ",
+   "views": 1466371,
+   "ratio": 29.2,
+   "age_h": 493,
+   "duration": 15,
+   "subs": 2250,
+   "url": "https://youtube.com/shorts/j9sjLwkyf8s"
+  },
+  {
+   "title": "💎 ONLY 2 MOVES TO CHECKMATE! #chess #shorts #viral",
+   "channel": "SMART AVANI",
+   "views": 87072,
+   "ratio": 20.0,
+   "age_h": 485,
+   "duration": 6,
+   "subs": 3630,
+   "url": "https://youtube.com/shorts/fdV01M9K4EM"
+  }
+ ],
+ "top_quartile_cut": 1.5,
+ "feature_lift": [
+  {
+   "feature": "can_you",
+   "lift": 1.33,
+   "share_top": 0.063,
+   "share_all": 0.047,
+   "n": 57,
+   "median_outlier": 1.07
+  },
+  {
+   "feature": "brilliant/blunder",
+   "lift": 1.21,
+   "share_top": 0.401,
+   "share_all": 0.331,
+   "n": 400,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "number",
+   "lift": 1.18,
+   "share_top": 0.195,
+   "share_all": 0.166,
+   "n": 200,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "question",
+   "lift": 1.18,
+   "share_top": 0.238,
+   "share_all": 0.202,
+   "n": 244,
+   "median_outlier": 1.02
+  },
+  {
+   "feature": "dur<=20s",
+   "lift": 1.16,
+   "share_top": 0.775,
+   "share_all": 0.667,
+   "n": 805,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "posted_12-18utc",
+   "lift": 1.09,
+   "share_top": 0.444,
+   "share_all": 0.408,
+   "n": 493,
+   "median_outlier": 0.99
+  },
+  {
+   "feature": "short_title(<=6w)",
+   "lift": 1.07,
+   "share_top": 0.679,
+   "share_all": 0.634,
+   "n": 765,
+   "median_outlier": 0.99
+  },
+  {
+   "feature": "hashtags_in_title",
+   "lift": 1.03,
+   "share_top": 0.838,
+   "share_all": 0.811,
+   "n": 979,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "posted_06-12utc",
+   "lift": 1.03,
+   "share_top": 0.305,
+   "share_all": 0.295,
+   "n": 356,
+   "median_outlier": 0.99
+  },
+  {
+   "feature": "long_title(>=12w)",
+   "lift": 1.02,
+   "share_top": 0.053,
+   "share_all": 0.052,
+   "n": 63,
+   "median_outlier": 0.99
+  },
+  {
+   "feature": "second_person",
+   "lift": 1.01,
+   "share_top": 0.096,
+   "share_all": 0.095,
+   "n": 115,
+   "median_outlier": 0.98
+  },
+  {
+   "feature": "dur>90s",
+   "lift": 0.94,
+   "share_top": 0.026,
+   "share_all": 0.028,
+   "n": 34,
+   "median_outlier": 0.93
+  },
+  {
+   "feature": "first_person",
+   "lift": 0.94,
+   "share_top": 0.043,
+   "share_all": 0.046,
+   "n": 55,
+   "median_outlier": 0.98
+  },
+  {
+   "feature": "emoji",
+   "lift": 0.93,
+   "share_top": 0.437,
+   "share_all": 0.47,
+   "n": 567,
+   "median_outlier": 0.98
+  },
+  {
+   "feature": "caps_word",
+   "lift": 0.91,
+   "share_top": 0.242,
+   "share_all": 0.264,
+   "n": 319,
+   "median_outlier": 0.95
+  },
+  {
+   "feature": "posted_00-06utc",
+   "lift": 0.87,
+   "share_top": 0.175,
+   "share_all": 0.201,
+   "n": 243,
+   "median_outlier": 1.0
+  },
+  {
+   "feature": "posted_18-24utc",
+   "lift": 0.8,
+   "share_top": 0.076,
+   "share_all": 0.095,
+   "n": 115,
+   "median_outlier": 0.86
+  },
+  {
+   "feature": "mate_in_n",
+   "lift": 0.75,
+   "share_top": 0.03,
+   "share_all": 0.04,
+   "n": 48,
+   "median_outlier": 0.87
+  },
+  {
+   "feature": "dur46-90s",
+   "lift": 0.73,
+   "share_top": 0.063,
+   "share_all": 0.086,
+   "n": 104,
+   "median_outlier": 0.86
+  },
+  {
+   "feature": "famous_player",
+   "lift": 0.69,
+   "share_top": 0.126,
+   "share_all": 0.183,
+   "n": 221,
+   "median_outlier": 0.84
+  },
+  {
+   "feature": "dur21-45s",
+   "lift": 0.62,
+   "share_top": 0.136,
+   "share_all": 0.219,
+   "n": 264,
+   "median_outlier": 0.88
+  }
+ ],
+ "winning_words": [
+  {
+   "word": "it's",
+   "lift": 2.69,
+   "in_winners": 8
+  },
+  {
+   "word": "pawns",
+   "lift": 2.47,
+   "in_winners": 11
+  },
+  {
+   "word": "com",
+   "lift": 2.17,
+   "in_winners": 7
+  },
+  {
+   "word": "rooks",
+   "lift": 2.02,
+   "in_winners": 9
+  },
+  {
+   "word": "players",
+   "lift": 2.02,
+   "in_winners": 4
+  },
+  {
+   "word": "queens",
+   "lift": 1.93,
+   "in_winners": 11
+  },
+  {
+   "word": "wins",
+   "lift": 1.63,
+   "in_winners": 21
+  },
+  {
+   "word": "explain",
+   "lift": 1.61,
+   "in_winners": 14
+  },
+  {
+   "word": "gambitkings",
+   "lift": 1.61,
+   "in_winners": 4
+  },
+  {
+   "word": "sacrifices",
+   "lift": 1.51,
+   "in_winners": 6
+  },
+  {
+   "word": "who",
+   "lift": 1.49,
+   "in_winners": 17
+  },
+  {
+   "word": "rook",
+   "lift": 1.45,
+   "in_winners": 33
+  }
+ ],
+ "duration_bands": {
+  "≤20s": {
+   "n": 805,
+   "median_outlier": 1.0
+  },
+  "21-45s": {
+   "n": 264,
+   "median_outlier": 0.88
+  },
+  "46-90s": {
+   "n": 104,
+   "median_outlier": 0.86
+  },
+  ">90s": {
+   "n": 34,
+   "median_outlier": 0.93
+  }
+ },
+ "you": {
+  "videos": 18,
+  "median_views": 1079.0,
+  "median_v24": 877.5,
+  "niche_small_channels_median_v24": 9638.0,
+  "niche_small_channels_n": 1080,
+  "best": {
+   "title": "Win material — even a grandmaster missed it. Can you?",
+   "channel": "Candidate Moves · Chess Puzzles",
+   "views": 1580,
+   "ratio": null,
+   "age_h": 166,
+   "duration": 21,
+   "subs": 53,
+   "url": "https://youtube.com/shorts/SVIjz1hLXPw"
+  },
+  "titles": [
+   "White to play. Grandmaster Aleksei Sarana missed the fork here",
+   "Win material — against Anish Giri in a one-minute game. Can you?",
+   "A grandmaster spotted this sacrifice in a three-minute game. Your turn",
+   "This was played against Alireza Firouzja. Can you find it?",
+   "Win material — Grandmaster Cemil Aghamaliyev found it in a three-minute game. Can you?",
+   "Even Grandmaster Dmitry Andreikin missed this. Can you find it?",
+   "White to play: Peter Svidler found the deflection. Can you?",
+   "Can you match Grandmaster Guillermo Vazquez? Win material.",
+   "Grandmaster Aleksei Sarana didn't see this mate in 3. Will you?",
+   "Fabiano Caruana played the winning move here. Can you find it?"
+  ],
+  "durations": [
+   22,
+   18,
+   13,
+   15,
+   14,
+   20,
+   14,
+   15,
+   22,
+   21
+  ]
+ },
+ "winner_median_duration": 11,
+ "gaps": [
+  {
+   "feature": "brilliant/blunder",
+   "lift": 1.21,
+   "share_top": 0.401,
+   "share_all": 0.331,
+   "n": 400,
+   "median_outlier": 1.0,
+   "own_share": 0.0
+  }
+ ],
+ "hypotheses": [
+  {
+   "change": "Include emojis and short, punchy descriptors (e.g., “💎 ONLY 2 MOVES TO CHECKMATE!”)",
+   "why": "Emojis and concise hype phrases appear in high‑performing winners and correlate with higher share among top quarter",
+   "evidence": [
+    "💎 ONLY 2 MOVES TO CHECKMATE! #chess #shorts #viral",
+    "💎 MATE IN 2 WITH LEVY ROZMAN! #chess #shorts #gothamchess"
+   ],
+   "how_to_test": "Produce a batch of Shorts with emoji‑rich titles and a control batch with plain text; track average views per video for each batch over a week."
+  },
+  {
+   "change": "Keep video duration ≤20 seconds and mention the time limit in the title (“<20s”)",
+   "why": "Durations ≤20 s have a lift of 1.16; winners often are short and fast‑paced",
+   "evidence": [
+    "predator chess #chess",
+    "Black vs White ♟️ Who’s winning this one? 👀🔥"
+   ],
+   "how_to_test": "Film identical content in two cuts (one 15 s, one 35 s); upload both with identical titles except for a “<20s” tag on the short version and compare view counts and retention metrics."
+  }
+ ],
+ "stability": {
+  "dur>90s": {
+   "days_above": 6,
+   "days_seen": 7
+  },
+  "dur46-90s": {
+   "days_above": 2,
+   "days_seen": 7
+  },
+  "brilliant/blunder": {
+   "days_above": 3,
+   "days_seen": 7
+  },
+  "posted_06-12utc": {
+   "days_above": 1,
+   "days_seen": 7
+  },
+  "can_you": {
+   "days_above": 6,
+   "days_seen": 7
+  },
+  "dur<=20s": {
+   "days_above": 2,
+   "days_seen": 7
+  },
+  "short_title(<=6w)": {
+   "days_above": 1,
+   "days_seen": 7
+  },
+  "number": {
+   "days_above": 5,
+   "days_seen": 7
+  },
+  "hashtags_in_title": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "posted_00-06utc": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "question": {
+   "days_above": 3,
+   "days_seen": 7
+  },
+  "mate_in_n": {
+   "days_above": 2,
+   "days_seen": 7
+  },
+  "posted_12-18utc": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "second_person": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "emoji": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "caps_word": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "long_title(>=12w)": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "famous_player": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "dur21-45s": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "first_person": {
+   "days_above": 0,
+   "days_seen": 7
+  },
+  "posted_18-24utc": {
+   "days_above": 0,
+   "days_seen": 7
+  }
+ },
+ "claude_prompt": "Improve my chess Shorts channel (@CandidateMoves). Repo: @@REPO@@ (GitHub: chess-puzzle-automation).\n\nEvidence from my Shorts Radar on 2026-11-13: 56 competitor channels, 1893 Shorts tracked, 1207 old enough to score. Outlier score = a Short's views divided by that channel's normal Short.\n\nWhere I am: my last 18 Shorts median 877 views at 24h; small competitors (<50k subs, n=1080) median 9,638.\n\nLength: my Shorts run a median 16s; the winning Shorts run a median 11s.\n\nWhat over-indexes among the top quarter of competitor Shorts (share in winners vs share overall):\n- can_you: 1.33x (6% vs 5%, n=57) [6 of 7 days]\n- brilliant/blunder: 1.21x (40% vs 33%, n=400) [3 of 7 days]\n- number: 1.18x (20% vs 17%, n=200) [5 of 7 days]\n- question: 1.18x (24% vs 20%, n=244) [3 of 7 days]\n- dur<=20s: 1.16x (78% vs 67%, n=805) [2 of 7 days]\n\nHeld up most of the week (over-indexed on most of the last 7 daily reports):\n- can_you: 6 of 7 days at 1.1x or more\n- number: 5 of 7 days at 1.1x or more\n\nWords over-represented in winning titles: it's (2.69x), pawns (2.47x), com (2.17x), rooks (2.02x), players (2.02x), queens (1.93x), wins (1.63x), explain (1.61x), gambitkings (1.61x), sacrifices (1.51x).\n\nWinning traits my recent titles rarely use: brilliant/blunder (winners 40%, me 0%).\n\nBreaking now (under 36h old and already beating their channel):\n- \"💎 MATE IN 2 WITH LEVY ROZMAN! #chess #shorts #gothamchess\" · 6.4x its channel's normal · 179,028 views in 29h · 10s · https://youtube.com/shorts/AiAJY8fr7GY\n- \"I know rules too #chess #foryoi #shorts #shortvideo\" · 4.4x its channel's normal · 44,600 views in 22h · 8s · https://youtube.com/shorts/P95zYBx5ixw\n- \"Sacrifices are everywhere. #chess #chesspuzzle #chesslessons\" · 3.0x its channel's normal · 31,997 views in 28h · 16s · https://youtube.com/shorts/oMiesO8N0B8\n- \"WHITE SACRIFICES EVERYTHING! 😱 PAWN DELIVERS BRILLIANT CHECKMATE! ♟️🔥 #ChessShorts\" · 2.4x its channel's normal · 81,916 views in 27h · 31s · https://youtube.com/shorts/HpUD1_3-QuM\n- \"bạn có nghĩ tới nước đi này? Did You Think of This Move? #chess #covualogic\" · 2.3x its channel's normal · 230,693 views in 35h · 11s · https://youtube.com/shorts/JZWbu-S6voI\n- \"Can you find it?😎 #chesspuzzle\" · 2.1x its channel's normal · 50,414 views in 31h · 10s · https://youtube.com/shorts/oHFNAtHA7lg\n\nBiggest recent outliers:\n- \"👑GambitKings.com👑\" · 389.4x its channel's normal · 2,569,835 views · 16s · https://youtube.com/shorts/ivsftZudlec\n- \"👑GambitKings.com👑\" · 189.4x its channel's normal · 1,250,214 views · 22s · https://youtube.com/shorts/ATOC-UbAQIM\n- \"💎 LEVY'S ROOOOOOK SACRIFICE! 🔥 | Brilliant Chess Move #shorts #chess #viral\" · 136.7x its channel's normal · 970,198 views · 9s · https://youtube.com/shorts/uDf9qIBI1N4\n- \"predator chess #chess\" · 60.5x its channel's normal · 3,009,087 views · 96s · https://youtube.com/shorts/pXmmXOcvaGA\n- \"oscar’s shaking in his boots #chess  #shorts  #checkmate #chesspuzzle\" · 38.9x its channel's normal · 1,854,775 views · 22s · https://youtube.com/shorts/EIyU10jVkec\n- \"Black vs White ♟️ Who’s winning this one? 👀🔥\" · 34.7x its channel's normal · 1,042,816 views · 38s · https://youtube.com/shorts/EcqRyWN6sFo\n\nThe radar's own proposals (unverified; weigh them yourself):\n- Include emojis and short, punchy descriptors (e.g., “💎 ONLY 2 MOVES TO CHECKMATE!”). Why: Emojis and concise hype phrases appear in high‑performing winners and correlate with higher share among top quarter Test: Produce a batch of Shorts with emoji‑rich titles and a control batch with plain text; track average views per video for each batch over a week.\n- Keep video duration ≤20 seconds and mention the time limit in the title (“<20s”). Why: Durations ≤20 s have a lift of 1.16; winners often are short and fast‑paced Test: Film identical content in two cuts (one 15 s, one 35 s); upload both with identical titles except for a “<20s” tag on the short version and compare view counts and retention metrics.\n\nMy recent titles:\n- White to play. Grandmaster Aleksei Sarana missed the fork here\n- Win material — against Anish Giri in a one-minute game. Can you?\n- A grandmaster spotted this sacrifice in a three-minute game. Your turn\n- This was played against Alireza Firouzja. Can you find it?\n- Win material — Grandmaster Cemil Aghamaliyev found it in a three-minute game. Can you?\n- Even Grandmaster Dmitry Andreikin missed this. Can you find it?\n- White to play: Peter Svidler found the deflection. Can you?\n- Can you match Grandmaster Guillermo Vazquez? Win material.\n- Grandmaster Aleksei Sarana didn't see this mate in 3. Will you?\n- Fabiano Caruana played the winning move here. Can you find it?\nBest of them: Win material — even a grandmaster missed it. Can you? (1,580 views).\n\nCaveats: this is correlation from a small, noisy sample, and some listed Shorts may not be chess. Do not copy competitors' titles or content; borrow the structure only. My real metric is how long viewers stay, so check performance_history.json before trusting a views-only pattern.\n\nRead first: memory note chess_puzzle_automation.md\n\nRules: £0 only. Never weaken or bypass the narration gate, the upload gate or the fact checks. Don't disturb running A/B tests - add new ideas as new experiments with their own control.\n\nThis is the weekly radar read. The chess bot's nightly experiment loop already starts and judges tests by itself from levers.json, in the order the radar's stable patterns suggest, and it never runs more than one at a time. Read EXPERIMENTS.md, experiments.py and levers.json first: list what is running and what is queued, and leave them alone. Then propose up to 2 NEW levers worth adding to levers.json, only from the patterns that held up most of the week and that are not already queued. For each: the exact change, why the data supports it, and whether it should be judged on stay rate or views@72h. If nothing qualifies, say so. For the one you rate highest, implement it as an off-by-default lever: failing test first, a sample render (send_sample.yml with loop_values), push, and confirm the next real run is green."
+}

@@ -1,0 +1,63 @@
+Improve my chess Shorts channel (@CandidateMoves). Repo: @@REPO@@ (GitHub: chess-puzzle-automation).
+
+Evidence from my Shorts Radar on 2026-11-13: 56 competitor channels, 1893 Shorts tracked, 1207 old enough to score. Outlier score = a Short's views divided by that channel's normal Short.
+
+Where I am: my last 18 Shorts median 877 views at 24h; small competitors (<50k subs, n=1080) median 9,638.
+
+Length: my Shorts run a median 16s; the winning Shorts run a median 11s.
+
+What over-indexes among the top quarter of competitor Shorts (share in winners vs share overall):
+- can_you: 1.33x (6% vs 5%, n=57) [6 of 7 days]
+- brilliant/blunder: 1.21x (40% vs 33%, n=400) [3 of 7 days]
+- number: 1.18x (20% vs 17%, n=200) [5 of 7 days]
+- question: 1.18x (24% vs 20%, n=244) [3 of 7 days]
+- dur<=20s: 1.16x (78% vs 67%, n=805) [2 of 7 days]
+
+Held up most of the week (over-indexed on most of the last 7 daily reports):
+- can_you: 6 of 7 days at 1.1x or more
+- number: 5 of 7 days at 1.1x or more
+
+Words over-represented in winning titles: it's (2.69x), pawns (2.47x), com (2.17x), rooks (2.02x), players (2.02x), queens (1.93x), wins (1.63x), explain (1.61x), gambitkings (1.61x), sacrifices (1.51x).
+
+Winning traits my recent titles rarely use: brilliant/blunder (winners 40%, me 0%).
+
+Breaking now (under 36h old and already beating their channel):
+- "💎 MATE IN 2 WITH LEVY ROZMAN! #chess #shorts #gothamchess" · 6.4x its channel's normal · 179,028 views in 29h · 10s · https://youtube.com/shorts/AiAJY8fr7GY
+- "I know rules too #chess #foryoi #shorts #shortvideo" · 4.4x its channel's normal · 44,600 views in 22h · 8s · https://youtube.com/shorts/P95zYBx5ixw
+- "Sacrifices are everywhere. #chess #chesspuzzle #chesslessons" · 3.0x its channel's normal · 31,997 views in 28h · 16s · https://youtube.com/shorts/oMiesO8N0B8
+- "WHITE SACRIFICES EVERYTHING! 😱 PAWN DELIVERS BRILLIANT CHECKMATE! ♟️🔥 #ChessShorts" · 2.4x its channel's normal · 81,916 views in 27h · 31s · https://youtube.com/shorts/HpUD1_3-QuM
+- "bạn có nghĩ tới nước đi này? Did You Think of This Move? #chess #covualogic" · 2.3x its channel's normal · 230,693 views in 35h · 11s · https://youtube.com/shorts/JZWbu-S6voI
+- "Can you find it?😎 #chesspuzzle" · 2.1x its channel's normal · 50,414 views in 31h · 10s · https://youtube.com/shorts/oHFNAtHA7lg
+
+Biggest recent outliers:
+- "👑GambitKings.com👑" · 389.4x its channel's normal · 2,569,835 views · 16s · https://youtube.com/shorts/ivsftZudlec
+- "👑GambitKings.com👑" · 189.4x its channel's normal · 1,250,214 views · 22s · https://youtube.com/shorts/ATOC-UbAQIM
+- "💎 LEVY'S ROOOOOOK SACRIFICE! 🔥 | Brilliant Chess Move #shorts #chess #viral" · 136.7x its channel's normal · 970,198 views · 9s · https://youtube.com/shorts/uDf9qIBI1N4
+- "predator chess #chess" · 60.5x its channel's normal · 3,009,087 views · 96s · https://youtube.com/shorts/pXmmXOcvaGA
+- "oscar’s shaking in his boots #chess  #shorts  #checkmate #chesspuzzle" · 38.9x its channel's normal · 1,854,775 views · 22s · https://youtube.com/shorts/EIyU10jVkec
+- "Black vs White ♟️ Who’s winning this one? 👀🔥" · 34.7x its channel's normal · 1,042,816 views · 38s · https://youtube.com/shorts/EcqRyWN6sFo
+
+The radar's own proposals (unverified; weigh them yourself):
+- Include emojis and short, punchy descriptors (e.g., “💎 ONLY 2 MOVES TO CHECKMATE!”). Why: Emojis and concise hype phrases appear in high‑performing winners and correlate with higher share among top quarter Test: Produce a batch of Shorts with emoji‑rich titles and a control batch with plain text; track average views per video for each batch over a week.
+- Keep video duration ≤20 seconds and mention the time limit in the title (“<20s”). Why: Durations ≤20 s have a lift of 1.16; winners often are short and fast‑paced Test: Film identical content in two cuts (one 15 s, one 35 s); upload both with identical titles except for a “<20s” tag on the short version and compare view counts and retention metrics.
+
+My recent titles:
+- White to play. Grandmaster Aleksei Sarana missed the fork here
+- Win material — against Anish Giri in a one-minute game. Can you?
+- A grandmaster spotted this sacrifice in a three-minute game. Your turn
+- This was played against Alireza Firouzja. Can you find it?
+- Win material — Grandmaster Cemil Aghamaliyev found it in a three-minute game. Can you?
+- Even Grandmaster Dmitry Andreikin missed this. Can you find it?
+- White to play: Peter Svidler found the deflection. Can you?
+- Can you match Grandmaster Guillermo Vazquez? Win material.
+- Grandmaster Aleksei Sarana didn't see this mate in 3. Will you?
+- Fabiano Caruana played the winning move here. Can you find it?
+Best of them: Win material — even a grandmaster missed it. Can you? (1,580 views).
+
+Caveats: this is correlation from a small, noisy sample, and some listed Shorts may not be chess. Do not copy competitors' titles or content; borrow the structure only. My real metric is how long viewers stay, so check performance_history.json before trusting a views-only pattern.
+
+Read first: memory note chess_puzzle_automation.md
+
+Rules: £0 only. Never weaken or bypass the narration gate, the upload gate or the fact checks. Don't disturb running A/B tests - add new ideas as new experiments with their own control.
+
+This is the weekly radar read. The chess bot's nightly experiment loop already starts and judges tests by itself from levers.json, in the order the radar's stable patterns suggest, and it never runs more than one at a time. Read EXPERIMENTS.md, experiments.py and levers.json first: list what is running and what is queued, and leave them alone. Then propose up to 2 NEW levers worth adding to levers.json, only from the patterns that held up most of the week and that are not already queued. For each: the exact change, why the data supports it, and whether it should be judged on stay rate or views@72h. If nothing qualifies, say so. For the one you rate highest, implement it as an off-by-default lever: failing test first, a sample render (send_sample.yml with loop_values), push, and confirm the next real run is green.
