@@ -1,0 +1,68 @@
+Improve my chess Shorts channel (@CandidateMoves). Repo: @@REPO@@ (GitHub: chess-puzzle-automation).
+
+Evidence from my Shorts Radar on 2026-11-28: 63 competitor channels, 1742 Shorts tracked, 1236 old enough to score. Outlier score = a Short's views divided by that channel's normal Short.
+
+Where I am: my last 14 Shorts median 911 views at 24h; small competitors (<50k subs, n=1015) median 13,489.
+
+Length: my Shorts run a median 15s; the winning Shorts run a median 14s.
+
+What over-indexes among the top quarter of competitor Shorts (share in winners vs share overall):
+- dur>90s: 1.27x (4% vs 4%, n=44) [2 of 7 days]
+- brilliant/blunder: 1.17x (35% vs 30%, n=365) [6 of 7 days]
+- posted_18-24utc: 1.16x (16% vs 13%, n=165) [7 of 7 days]
+- long_title(>=12w): 1.13x (7% vs 6%, n=78) [3 of 7 days]
+- caps_word: 1.11x (25% vs 23%, n=282) [4 of 7 days]
+- mate_in_n: 1.11x (4% vs 4%, n=47) [1 of 7 days]
+- number: 1.11x (18% vs 17%, n=205) [6 of 7 days]
+- posted_06-12utc: 1.11x (31% vs 28%, n=349) [3 of 7 days]
+
+Held up most of the week (over-indexed on most of the last 7 daily reports):
+- brilliant/blunder: 6 of 7 days at 1.1x or more
+- posted_18-24utc: 7 of 7 days at 1.1x or more
+- number: 6 of 7 days at 1.1x or more
+
+Words over-represented in winning titles: brilliance (2.68x), esse (2.3x), bro (2.01x), everywhere (1.86x), gambitkings (1.79x), com (1.68x), did (1.61x), hikaru (1.61x), chessbloop (1.61x), pawns (1.61x).
+
+Winning traits my recent titles rarely use: dur>90s (winners 4%, me 0%).
+
+Breaking now (under 36h old and already beating their channel):
+- "Brilliant Or Blunder ❓🤔#chess #chessgame #chesspuzzle#ajedrez#checkmate#magnuscarlsen#шахматы#shorts" · 7.0x its channel's normal · 231,301 views in 31h · 12s · https://youtube.com/shorts/U6Wrej5JGUQ
+- "Fork❌ Blunder ✅ #chess #chessgame #chesscom" · 2.9x its channel's normal · 151,320 views in 26h · 12s · https://youtube.com/shorts/g8oW_dRreuk
+- "Brilliant Queen Sacrifice #chess #tamil #chessgame #chesspuzzle" · 2.9x its channel's normal · 70,576 views in 30h · 7s · https://youtube.com/shorts/siBFsNSBn1k
+- "4 Blunders ‼️😭  ♟️🔥 | Best Amazon Black Friday Deals 2026! #chess" · 2.7x its channel's normal · 98,368 views in 26h · 17s · https://youtube.com/shorts/QPfC-4UjFPw
+- "Royal Endgame" · 2.5x its channel's normal · 142,662 views in 25h · 178s · https://youtube.com/shorts/4OsqOwPdo1k
+- "Love a free rook #chess #foryou #shorts #shortvideo" · 2.4x its channel's normal · 38,513 views in 23h · 8s · https://youtube.com/shorts/2qacgotyapU
+
+Biggest recent outliers:
+- "Majestic Luck" · 46.4x its channel's normal · 2,634,132 views · 179s · https://youtube.com/shorts/Sg8WSsNcgvs
+- "💎 THIS BISHOP SACRIFICE IS INSANE! #chess #shorts #praggnanandhaa" · 45.6x its channel's normal · 459,696 views · 8s · https://youtube.com/shorts/ccZyQd2CL1U
+- "Black vs White ♟️ Who’s winning this one? 👀🔥" · 45.1x its channel's normal · 1,587,442 views · 38s · https://youtube.com/shorts/EcqRyWN6sFo
+- "Cats VS Dogs Chess Pieces" · 33.0x its channel's normal · 2,501,034 views · 18s · https://youtube.com/shorts/0NLoZb8LutU
+- "Brilliant Or Blunder ❓🤔#chess #chessgame#chesspuzzle#ajedrez #checkmate#magnuscarlsen#шахматы#shorts" · 21.2x its channel's normal · 705,304 views · 11s · https://youtube.com/shorts/_Xze8lqynX8
+- "bots in chess 💀🦾 || #chess #chessedit" · 20.3x its channel's normal · 621,276 views · 17s · https://youtube.com/shorts/_j-qG4AZDrw
+
+The radar's own proposals (unverified; weigh them yourself):
+- Add an emoji and a question mark to the title to create a short, attention‑grabbing hook.. Why: Titles with caps_word and short_title (<=6w) have lift >1.0, and many winners use emojis and a direct question (e.g., "Black vs White ♟️ Who’s winning this one? 👀🔥" and "Brilliant Or Blunder ❓🤔#chess #chessgame#chesspuzzle#ajedrez #checkmate#magnuscarlsen#шахматы#shorts"). Adding emojis and a question should increase click‑through. Test: Create 5 new Shorts with titles following the pattern "[Topic] ❓🤔" or "[Topic] ♟️ Who’s winning? 👀🔥" and 5 control Shorts keeping the current title style. Compare view counts and watch‑through rates over a 7‑day period.
+- Include a numeric hook (e.g., "4 Blunders", "3 Moves") at the start of the title.. Why: The 'number' feature shows a lift of 1.11, and winners frequently start with a number such as "4 Blunders ‼️😭  ♟️🔥 | Best Amazon Black Friday Deals 2026! #chess" and "Fork❌ Blunder ✅ #chess #chessgame #chesscom" (implied count). Numbers draw attention and improve performance. Test: Produce 6 Shorts titled with a leading number (e.g., "3 Brilliant Sacrifices", "5 Quick Forks") and 6 Shorts without numbers. Track average views per impression for each group over two weeks.
+- Post new Shorts between 18:00‑24:00 UTC and add a short (<=20 s) duration tag in the description.. Why: The 'posted_18-24utc' lift is 1.16 and 'dur<=20s' lift is 1.05. Winners often align with these factors, e.g., "The safest king in the world ✅#chess #chessgame #chessplayer #chesstactics #chessshorts #shorts" (short format) and "bots in chess 💀🦾 || #chess #chessedit" (posted likely in evening). Combining both should boost reach. Test: Schedule 8 new Shorts to go live between 18:00‑24:00 UTC, each under 20 seconds, and compare their view‑through and engagement metrics to 8 Shorts posted at other times or longer durations.
+
+My recent titles:
+- Black to play. Grandmaster Oleksandr Bortnyk missed the pin here
+- A grandmaster spotted this fork in a blitz game. Your turn
+- This was played against Magnus Carlsen. Can you find it?
+- Can you find the move Grandmaster Francisco Vallejo Pons played?
+- Even Nihal Sarin missed this. Can you find it?
+- Alireza Firouzja faced this quiet move in a one-minute game. Can you find it?
+- Even a grandmaster missed this. Can you find it?
+- Can you match Grandmaster Thomas Beerdsen? Win material.
+- Can you spot what Grandmaster Maxim Matlakov missed in a one-minute game?
+- A grandmaster played the winning move here. Can you find it?
+Best of them: A grandmaster spotted this fork in a blitz game. Your turn (2,388 views).
+
+Caveats: this is correlation from a small, noisy sample, and some listed Shorts may not be chess. Do not copy competitors' titles or content; borrow the structure only. My real metric is how long viewers stay, so check performance_history.json before trusting a views-only pattern.
+
+Read first: memory note chess_puzzle_automation.md
+
+Rules: £0 only. Never weaken or bypass the narration gate, the upload gate or the fact checks. Don't disturb running A/B tests - add new ideas as new experiments with their own control.
+
+This is the weekly radar read. The chess bot's nightly experiment loop already starts and judges tests by itself from levers.json, in the order the radar's stable patterns suggest, and it never runs more than one at a time. Read EXPERIMENTS.md, experiments.py and levers.json first: list what is running and what is queued, and leave them alone. Then propose up to 2 NEW levers worth adding to levers.json, only from the patterns that held up most of the week and that are not already queued. For each: the exact change, why the data supports it, and whether it should be judged on stay rate or views@72h. If nothing qualifies, say so. For the one you rate highest, implement it as an off-by-default lever: failing test first, a sample render (send_sample.yml with loop_values), push, and confirm the next real run is green.
